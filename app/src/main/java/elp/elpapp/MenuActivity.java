@@ -19,7 +19,7 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-public class Page1 extends AppCompatActivity {
+public class MenuActivity extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -39,7 +39,7 @@ public class Page1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_page1);
+        setContentView(R.layout.activity_menu);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -69,7 +69,7 @@ public class Page1 extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_page1, menu);
+        getMenuInflater().inflate(R.menu.menu_main2, menu);
         return true;
     }
 
@@ -116,7 +116,7 @@ public class Page1 extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_page1, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_main2, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
             textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;
@@ -137,19 +137,7 @@ public class Page1 extends AppCompatActivity {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            //return PlaceholderFragment.newInstance(position + 1);
-            switch (position) {
-                case 0:
-                    Noticias noticias = new Noticias();
-                    return noticias;
-                case 1:
-                    Test test = new Test();
-                    return test;
-                case 2:
-                    Conferencias conferencias = new Conferencias();
-                    return conferencias;
-            }
-            return null;
+            return PlaceholderFragment.newInstance(position + 1);
         }
 
         @Override
@@ -164,9 +152,9 @@ public class Page1 extends AppCompatActivity {
                 case 0:
                     return "NOTICIAS";
                 case 1:
-                    return "TEST";
-                case 2:
                     return "CONFERENCIAS";
+                case 2:
+                    return "TEST";
             }
             return null;
         }
