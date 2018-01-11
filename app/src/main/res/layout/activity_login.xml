@@ -19,6 +19,7 @@
         android:gravity="center_horizontal"
         android:layout_marginTop="94dp"
         android:text="ELP"
+        android:textColor="#ffffff"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -60,9 +61,12 @@
                 android:layout_height="35dp"
                 android:layout_marginTop="105dp"
                 android:background="@drawable/rounded_editext"
-                android:hint=" Email"
+                android:hint="  Email"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
+                android:textColor="#FFFFFFFF"
+                android:backgroundTint="#FFFFFFFF"
+                android:textColorHint="#FFFFFFFF"
                  />
 
             <EditText
@@ -77,7 +81,9 @@
                 android:imeOptions="actionUnspecified"
                 android:inputType="textPassword"
                 android:maxLines="1"
-
+                android:textColor="#FFFFFFFF"
+                android:backgroundTint="#FFFFFFFF"
+                android:textColorHint="#FFFFFFFF"
                  />
 
             <Button

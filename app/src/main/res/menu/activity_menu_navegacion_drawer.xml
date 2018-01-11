@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_perfil"
+        android:icon="@drawable/ic_person"
+        android:title="Perfil" />
+    <item
+        android:id="@+id/nav_estadisticas"
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="Insignias" />
+    <item
+        android:id="@+id/tutorias"
+        android:icon="@drawable/ic_notas"
+        android:title="Profesores y tutorias" />
+    </group>
+    <item android:title="Correo ">
+        <menu>
+            <item
+                android:id="@+id/nav_correo"
+                android:icon="@drawable/ic_email"
+                android:title="Gmail"/>
+        </menu>
+    </item>
+
+    <item android:title="Configuración">
+        <menu>
+            <item
+            android:id="@+id/nav_cerrarsesion"
+            android:icon="@drawable/ic_salir"
+            android:title="Cerrar sesión"/>
+        </menu>
+    </item>
+    <!--<group android:checkableBehavior="single">
+    </group>-->
+</menu>

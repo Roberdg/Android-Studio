@@ -1,11 +1,19 @@
 package elp.elpapp;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.net.Uri;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -16,25 +24,20 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class MenuActivity extends AppCompatActivity {
 
-    /**
-     * The {@link android.support.v4.view.PagerAdapter} that will provide
-     * fragments for each of the sections. We use a
-     * {@link FragmentPagerAdapter} derivative, which will keep every
-     * loaded fragment in memory. If this becomes too memory intensive, it
-     * may be best to switch to a
-     * {@link android.support.v4.app.FragmentStatePagerAdapter}.
-     */
+public class MenuActivity extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener{
+
     private SectionsPagerAdapter mSectionsPagerAdapter;
-
-    /**
-     * The {@link ViewPager} that will host the section contents.
-     */
     private ViewPager mViewPager;
+    private NavigationView navigationView;
+    private TabLayout tabLayout;
+    private FloatingActionButton fab;
+    private DrawerLayout drawerL;
+    private ActionBarDrawerToggle toggle;
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,33 +46,92 @@ public class MenuActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        drawerL = (DrawerLayout) findViewById(R.id.drawer_layout);
+        toggle = new ActionBarDrawerToggle(
+                this, drawerL, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+
+        drawerL.setDrawerListener(toggle);
+
+
+        toggle.syncState();
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+
+            // This method will trigger on item Click of navigation menu
+            @Override
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
+
+
+
+                if (menuItem.isChecked()) menuItem.setChecked(false);
+                else menuItem.setChecked(true);
+                drawerL.closeDrawers();
+
+                TextView c = (TextView)findViewById(R.id.text_nav_email);
+                SharedPreferences prefs = getSharedPreferences("MisPreferencias", Context.MODE_PRIVATE);
+                c.setText(prefs.getString("email",""));
+
+                switch (menuItem.getItemId())
+                {
+                /*Se define la lógica de casos que puedan producirse al seleccionar cualquier elemento del menú.*/
+                    case R.id.nav_perfil:
+                        Toast.makeText(MenuActivity.this,"Perfil del usuario", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(MenuActivity.this, Perfil.class);
+                        startActivity(intent);
+
+                        break;
+                    case R.id.nav_estadisticas:
+                        Toast.makeText(MenuActivity.this,"Estadísticas del usuario", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(MenuActivity.this, Estadisticas.class);
+                        startActivity(intent);
+
+                        break;
+                    case R.id.tutorias:
+                        Toast.makeText(MenuActivity.this,"Profesores y tutorias", Toast.LENGTH_SHORT).show();
+                        Uri uriN = Uri.parse("http://informatica.ucm.es/profesores-y-tutorias");
+                        intent = new Intent(Intent.ACTION_VIEW,uriN);
+                        startActivity(intent);
+                        break;
+                    case R.id.nav_correo:
+                        Toast.makeText(MenuActivity.this,"Correo electrónico del usuario", Toast.LENGTH_SHORT).show();
+                        Uri uri = Uri.parse("http://gmail.com");
+                        intent = new Intent(Intent.ACTION_VIEW,uri);
+                        startActivity(intent);
+                        break;
+                    case R.id.nav_cerrarsesion:
+                        Toast.makeText(MenuActivity.this,"Ha cerrado la sesión", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(MenuActivity.this, LoginActivity.class);
+                        startActivity(intent);
+                        break;
+                    default:
+                        break;
+                }
+                return true;
+            }
+        });
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
     }
 
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main2, menu);
+        // Inflate the menu; this adds items_noticias to the action bar if it is present.
+        //getMenuInflater().inflate(R.menu.menu_main2, menu);
+        //getMenuInflater().inflate(R.menu.menu_navegacion, menu);
         return true;
     }
 
@@ -81,12 +143,21 @@ public class MenuActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.listItemsTest) {
+            Intent mIntent = new Intent(MenuActivity.this, Test.class);
+            startActivity(mIntent);
+            return true;
+        }
+        if (id == R.id.listItems) {
+            Intent mIntent = new Intent(MenuActivity.this, Noticias.class);
+            startActivity(mIntent);
             return true;
         }
 
+
         return super.onOptionsItemSelected(item);
     }
+
 
     /**
      * A placeholder fragment containing a simple view.
@@ -116,9 +187,9 @@ public class MenuActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main2, container, false);
-            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+            View rootView = inflater.inflate(R.layout.noticias, container, false);
+            //TextView textView = (TextView) rootView.findViewById(R.id.textView);             //Cosa Rara puesta aqui!!
+          //  textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;
         }
     }
@@ -135,15 +206,31 @@ public class MenuActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            // getItem is called to instantiate the fragment for the given page.
-            // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1);
+
+            switch (position) {
+                case 0:
+                    Noticias noticias = new Noticias();
+                    return noticias;
+                case 1:
+                    Conferencias conferencias = new Conferencias();
+                    return conferencias;
+                case 2:
+                    Test test = new Test();
+                    return test;
+                case 3:
+                    Wiki wiki = new Wiki();
+                    return wiki;
+                default:
+                    return null;
+            }
+
+            //return PlaceholderFragment.newInstance(position + 1);
         }
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
-            return 3;
+            // Show 4 total pages.
+            return 4;
         }
 
         @Override
@@ -152,11 +239,87 @@ public class MenuActivity extends AppCompatActivity {
                 case 0:
                     return "NOTICIAS";
                 case 1:
-                    return "CONFERENCIAS";
+                    return "VIDEOS";
                 case 2:
                     return "TEST";
+                case 3:
+                    return "WIKI";
             }
             return null;
         }
     }
+
+
+
+    /********************************************************/
+
+    @Override
+    public void onBackPressed() {
+        drawerL = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawerL.isDrawerOpen(GravityCompat.START)) {
+            drawerL.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+    @SuppressWarnings("StatementWithEmptyBody")
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        // Handle navigation view item clicks here.
+        //FragmentManager fragmentManager = getSupportFragmentManager();
+        Fragment fragment;
+        int id = item.getItemId();
+
+        if (id == R.id.nav_perfil) {
+            // Handle the camera action
+
+            /*fragment = new Perfil();
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.container, fragment);
+            ft.commit();*/
+
+            //fragmentManager.beginTransaction().replace(R.id.container,new Perfil()).commit();
+
+        } else if (id == R.id.nav_estadisticas) {
+
+        } else if (id == R.id.tutorias) {
+            /*Uri uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/Ayuda:Tutorial");
+            Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+            startActivity(intent);*/
+        } else if (id == R.id.nav_correo) {
+            /*Uri uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/Ayuda:Tutorial");
+            Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+            startActivity(intent);*/
+        } else if (id == R.id.nav_cerrarsesion) {
+
+        }
+
+        drawerL = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawerL.closeDrawer(GravityCompat.START);
+        return true;
+    }
+
+    /********************************************************/
+    /*@Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        // Sync the toggle state after onRestoreInstanceState has occurred.
+        mDrawerToggle.syncState();
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        mDrawerToggle.onConfigurationChanged(newConfig);
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        // If the nav drawer is open, hide action items related to the content view
+        boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
+        menu.findItem(R.id.action_websearch).setVisible(!drawerOpen);
+        return super.onPrepareOptionsMenu(menu);
+    }*/
+
 }

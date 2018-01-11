@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/imagen5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregunta 2 \nAnte un problema ético en el trabajo:"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#ffffff"
+        android:id="@+id/textView8" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RadioButton
+        android:id="@+id/test1_p2r1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textColor="#ffffff"
+        android:text="Interpretar la situación, analizar éticamente la situación, implementar un plan" />
+
+    <RadioButton
+        android:id="@+id/test1_p2r2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:text="Interpretar la situación, analizar moralmente la situación, determinar qué acciones podría seguir, decidir qué voy a hacer, ejecutar e implementar un plan de acción " />
+
+    <RadioButton
+        android:id="@+id/test1_p2r3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:text="Analizar moralmente la situación, determinar qué acciones podría seguir, decidir qué voy a hacer, ejecutar e implementar un plan de acción " />
+
+
+        <RadioButton
+        android:id="@+id/test1_p2r4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:text="Interpretar la situación, analizar éticamente la situación, determinar qué acciones podría seguir, decidir qué voy a hacer, implementar un plan de acción " />
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/test1_siguiente2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="250dp"/>
+
+    <Button
+        android:id="@+id/test1_anterior1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anterior"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="70dp"
+         />
+
+
+</RelativeLayout>
