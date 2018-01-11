@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="elp.elpapp.MenuActivity$PlaceholderFragment">
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listItemsConferencias"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+    </ListView>
+
+</RelativeLayout>
+<!--<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/youtube_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+    <FrameLayout
+        android:id="@+id/youtube_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+
+</RelativeLayout>-->
+
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="elp.elpapp.MenuActivity$PlaceholderFragment">
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Jose A. Rubio "
+            android:id="@+id/textView1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Rosario Rossi  "
+            android:id="@+id/textView2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="250dp" />
+
+        <VideoView
+            android:id="@+id/myVideo2"
+            android:layout_width="320dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="270dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Antiguxs alumnxs  "
+            android:id="@+id/textView3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="480dp" />
+
+        <VideoView
+            android:id="@+id/myVideo3"
+            android:layout_width="320dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="500dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Laura Martínez Álvaro "
+            android:id="@+id/textView4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="710dp" />
+
+        <VideoView
+            android:id="@+id/myVideo4"
+            android:layout_width="320dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="730dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Cesar Lorenzana "
+            android:id="@+id/textView5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="940dp" />
+
+        <VideoView
+            android:id="@+id/myVideo5"
+            android:layout_width="320dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="960dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. Carmen Bermejo "
+            android:id="@+id/textView6"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="1170dp" />
+
+        <VideoView
+            android:id="@+id/myVideo6"
+            android:layout_width="320dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="1190dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/textView7"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="1450dp" />
+
+    </RelativeLayout>
+</ScrollView>-->

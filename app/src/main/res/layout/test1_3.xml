@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/imagen5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregunta 3 \n Ante un problema ético la sociedad debería:"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#ffffff"
+        android:id="@+id/textView8" />
+
+    <RadioButton
+        android:id="@+id/test1_p3r1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="69dp"
+        android:textColor="#ffffff"
+        android:text="Respuesta 1" />
+
+    <RadioButton
+        android:id="@+id/test1_p3r2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="109dp"
+        android:textColor="#ffffff"
+        android:text="Respuesta 2" />
+
+    <RadioButton
+        android:id="@+id/test1_p3r3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="149dp"
+        android:textColor="#ffffff"
+        android:text="Respuesta 3" />
+
+    <RadioButton
+        android:id="@+id/test1_p3r4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="189dp"
+        android:textColor="#ffffff"
+        android:text="Respuesta 4" />
+
+    <Button
+        android:id="@+id/test1_finalizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:text="Finalizar"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@+id/test1_p3r4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="87dp" />
+
+    <Button
+        android:id="@+id/test1_anterior2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anterior"
+        android:background="@drawable/rounded_button"
+        android:layout_marginRight="58dp"
+        android:layout_marginEnd="58dp"
+        android:layout_alignBaseline="@+id/test1_finalizar"
+        android:layout_alignBottom="@+id/test1_finalizar"
+        android:layout_toLeftOf="@+id/test1_finalizar"
+        android:layout_toStartOf="@+id/test1_finalizar" />
+
+
+
+
+</RelativeLayout>
