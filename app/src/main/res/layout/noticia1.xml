@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_noticia1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,7 +16,7 @@
         android:id="@+id/txtTitle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Noticia 1 \n ...."
+        android:text="Facebook dará prioridad a los contenidos personales frente a los corporativos."
         android:textSize="18dip"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
@@ -21,8 +26,9 @@
     <ImageView
         android:id="@+id/imgItem"
         android:layout_width="160dp"
-        android:layout_height="100dp"
+        android:layout_height="200dp"
         android:layout_marginTop="75dp"
+        android:background="@drawable/facebook"
         android:layout_alignLeft="@+id/txtDescripcion"
         android:layout_alignStart="@+id/txtDescripcion"
         android:layout_alignRight="@+id/txtTitle"
@@ -30,12 +36,24 @@
 
     <TextView
         android:id="@+id/txtDescripcion"
-        android:text="Descripcion 1 \n ...."
+        android:text="La red social Facebook anunció hoy que en el muro de sus usuarios dará prioridad a los contenidos publicados por familiares o amigos frente a las publicaciones que lleven la firma de empresas o medios de comunicación.
+\n\nEl fundador y consejero delegado de Facebook, Mark Zuckerberg, desveló estos cambios en el funcionamiento de su plataforma que están orientados a mejorar y a hacer más valiosas las experiencias de sus usuarios en esta red.
+\n\nRecientemente hemos recibido comentarios de nuestra comunidad acerca de que el contenido público -publicaciones de negocios, marcas y medios- está desplazando los momentos personales que nos llevan a conectar más con los otros, dijo en una publicación en su perfil oficial de Facebook.
+\n\nZuckerberg admitió que los vídeos y otros contenidos corporativos en Facebook han crecido mucho en los últimos dos años, por lo que hay más publicaciones de este tipo que personales de amigos y familiares.
+\n\nEl máximo responsable del gigante tecnológico sostuvo que hay evidencias académicas que apuntan que este desequilibrio no es algo positivo.
+Las investigaciones muestran que cuando usamos las redes sociales para conectar con gente que nos importa, puede ser bueno para nuestro bienestar. Nos podemos sentir más conectados y menos solos y eso tiene una correlación con los índices de felicidad y salud a largo plazo, aseguró.
+Por otro lado, leer artículos o ver vídeos de manera pasiva, incluso si son de entretenimiento o informativos, quizá no sea tan bueno, añadió.
+\n\nZuckerberg dijo que Facebook ha hecho cambios en esta dirección desde el año pasado y adelantó que los usuarios de la red empezarán a ver próximamente más publicaciones en su muro de amigos, familiares y conocidos.
+\n\nSegún los últimos datos oficiales conocidos, correspondientes a septiembre de 2017, los usuarios activos diarios de media en Facebook se situaron en 1.370 millones de personas.
+\n\nDe la misma forma, sus usuarios activos mensuales, a fecha del pasado 30 de septiembre, alcanzaron 2.070 millones de personas. \n\n"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:textSize="14dip"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="290dp"
         android:layout_marginLeft="16dp"
         android:textColor="#ffffff"/>
 
+
 </RelativeLayout>
+
+</ScrollView>

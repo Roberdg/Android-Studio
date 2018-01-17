@@ -10,9 +10,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pregunta 1 \n ...."
+        android:text="Pregunta 1.\n¿Que tipos de delitos hay?"
         android:textSize="18dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:textColor="#ffffff"
         android:id="@+id/textView8" />
@@ -24,9 +24,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="69dp"
+        android:layout_marginTop="3dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 1" />
+        android:text="Los delitos se clasifican en graves, menos graves y leves. Son delitos graves aquellos a los que la Ley castiga con pena de prisión superior a 5 años. Los delitos menos graves son los sancionados con pena de prisión de 3 meses a 5 años. Faltas son infracciones castigadas con penas leves." />
 
     <RadioButton
         android:id="@+id/test5_p1r2"
@@ -35,9 +35,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="109dp"
+        android:layout_marginTop="129dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 1" />
+        android:text="Los delitos se clasifican en graves, menos graves y leves. Son delitos graves aquellos a los que la Ley castiga con pena de prisión superior a 5 años. Los delitos menos graves son los sancionados con pena de prisión de 6 meses a 10 años. Faltas son infracciones castigadas con penas leves." />
 
     <RadioButton
         android:id="@+id/test5_p1r3"
@@ -46,9 +46,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="149dp"
+        android:layout_marginTop="253dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 3" />
+        android:text="Los delitos se clasifican en leves, menos graves, graves. Son delitos graves aquellos a los que la Ley castiga con pena de prisión superior a 10 años. Los delitos menos graves son los sancionados con pena de prisión de 5 meses a 10 años. " />
 
     <RadioButton
         android:id="@+id/test5_p1r4"
@@ -57,9 +57,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="189dp"
+        android:layout_marginTop="359dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 4" />
+        android:text="Los delitos se clasifican en leves, menos leves. Son delitos graves aquellos a los que la Ley castiga con pena de prisión superior a 5 años. Los delitos menos graves son los sancionados con pena de prisión de 6 meses a 10 años. " />
 
     <Button
         android:id="@+id/test5_siguiente1"
@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="52dp"
         android:layout_marginRight="52dp"
-        android:layout_marginTop="81dp"
+        android:layout_marginTop="1dp"
         android:text="Siguiente"
         android:layout_below="@+id/test5_p1r4"
         android:layout_alignParentRight="true"

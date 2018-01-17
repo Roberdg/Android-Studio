@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="130dp"
-        android:text="Sistema de valores solo ajenas, punto de vista, pros y contras, circunstancias"
+        android:text="Sistema de valores solo ajenas, punto de vista, pros y contras, circunstancias."
         android:textColor="#ffffff" />
 
     <RadioButton
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textColor="#ffffff"
-        android:text="Sistema de valores propias y ajenas, punto de vista, personas / colectivos afectados, no se dan pros y contras" />
+        android:text="Sistema de valores propias y ajenas, punto de vista, personas / colectivos afectados, no se dan pros y contras." />
 
     <RadioButton
         android:id="@+id/test1_p1r3"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textColor="#ffffff"
-        android:text="Sistema de valores ajenas, punto de vista, personas / colectivos afectados, no se tienen en cuentas las circunstancias, pros y contras, alcance de las consecuencias, posibles escenarios futuros partiendo de la decisión presente" />
+        android:text="Sistema de valores ajenas, punto de vista, personas / colectivos afectados, no se tienen en cuentas las circunstancias, pros y contras, alcance de las consecuencias, posibles escenarios futuros partiendo de la decisión presente." />
 
     <RadioButton
         android:id="@+id/test1_p1r4"
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textColor="#ffffff"
-        android:text="Sistema de valores propias y ajenas, punto de vista, personas / colectivos afectados, se tienen en cuentas las circunstancias, pros y contras, alcance de las consecuencias, posibles escenarios futuros partiendo de la decisión presente" />
+        android:text="Sistema de valores propias y ajenas, punto de vista, personas / colectivos afectados, se tienen en cuentas las circunstancias, pros y contras, alcance de las consecuencias, posibles escenarios futuros partiendo de la decisión presente." />
 </RadioGroup>
     <Button
         android:id="@+id/test1_siguiente1"

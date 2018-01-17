@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pregunta 3 \n ...."
+        android:text="Pregunta 3. \nSegún Levy (1984) todos los hackers comparten los siguientes principios éticos"
         android:textSize="18dp"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
@@ -24,9 +24,10 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="69dp"
+        android:layout_marginTop="9dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 1..." />
+        android:text="Acceso libre a los computadores y otros recursos TIC, toda la información debería ser libre, es necesario un gobierno centralizado, los hackers no deben ser juzgados por sus obras.
+" />
 
     <RadioButton
         android:id="@+id/test5_p3r2"
@@ -35,9 +36,10 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="109dp"
+        android:layout_marginTop="89dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 2..." />
+        android:text="Acceso libre a los computadores y otros recursos TIC, toda la información debería ser libre, no es necesario un gobierno centralizado, los hackers deben ser juzgados por sus obras.
+" />
 
     <RadioButton
         android:id="@+id/test5_p3r3"
@@ -46,9 +48,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="149dp"
+        android:layout_marginTop="169dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 3..." />
+        android:text="Acceso privado a los computadores y otros recursos TIC, toda la información no debería ser libre, no es necesario un gobierno centralizado, los hackers deben ser juzgados por sus obras." />
 
     <RadioButton
         android:id="@+id/test5_p3r4"
@@ -57,9 +59,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="189dp"
+        android:layout_marginTop="249dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 4..." />
+        android:text="Acceso privado a los computadores y otros recursos TIC, toda la información no debería ser libre, es necesario un gobierno centralizado, los hackers no deben ser juzgados por sus obras." />
 
     <Button
         android:id="@+id/test5_finalizar"
@@ -80,12 +82,12 @@
         android:layout_height="wrap_content"
         android:text="Anterior"
         android:background="@drawable/rounded_button"
-        android:layout_marginBottom="76dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginStart="66dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/test2_p3r4"
-        android:layout_alignStart="@+id/test2_p3r4"
-        android:layout_marginLeft="70dp"
-        android:layout_marginStart="70dp" />
+        android:layout_alignLeft="@+id/test5_p3r4"
+        android:layout_alignStart="@+id/test5_p3r4"
+        android:layout_marginBottom="41dp" />
 
 
 </RelativeLayout>

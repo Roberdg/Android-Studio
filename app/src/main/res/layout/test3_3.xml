@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pregunta 3 \n ...."
+        android:text="Pregunta 3. \n¿Cuántos años tienen que pasar para que una obra sea de dominio público?"
         android:textSize="18dp"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
@@ -24,9 +24,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="69dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 1..." />
+        android:text="50 años." />
 
     <RadioButton
         android:id="@+id/test3_p3r2"
@@ -35,9 +35,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="109dp"
+        android:layout_marginTop="59dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 2..." />
+        android:text="60 años." />
 
     <RadioButton
         android:id="@+id/test3_p3r3"
@@ -46,9 +46,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="149dp"
+        android:layout_marginTop="99dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 3..." />
+        android:text="70 años." />
 
     <RadioButton
         android:id="@+id/test3_p3r4"
@@ -57,9 +57,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="189dp"
+        android:layout_marginTop="139dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 4..." />
+        android:text="100 años." />
 
     <Button
         android:id="@+id/test3_finalizar"
