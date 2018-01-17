@@ -76,11 +76,11 @@ public class Conferencias extends Fragment {
     private void loadItemsConferencias(){
 
         ItemsConferencias = new ArrayList<DatosConferencias>();
-        ItemsConferencias.add(new DatosConferencias("Conferencia 1",R.drawable.img_confe1));
-        ItemsConferencias.add(new DatosConferencias("Conferencia 2",R.drawable.imagen1));
-        ItemsConferencias.add(new DatosConferencias("Conferencia 3",R.drawable.imagen1));
-        ItemsConferencias.add(new DatosConferencias("Conferencia 4",R.drawable.imagen1));
-        ItemsConferencias.add(new DatosConferencias("Conferencia 5",R.drawable.imagen1));
+        ItemsConferencias.add(new DatosConferencias("GDPR: Novedades e Impactos en Tecnologías  de la Información",R.drawable.img_confe11));
+        ItemsConferencias.add(new DatosConferencias("Derechos de autor y cultura libre",R.drawable.img_confe22));
+        ItemsConferencias.add(new DatosConferencias("Redecentralizing the Web: IPFS and Filecoin",R.drawable.img_confe33));
+        ItemsConferencias.add(new DatosConferencias("Diálogo con ex-estudiantes",R.drawable.img_confe44));
+        ItemsConferencias.add(new DatosConferencias("Brecha de género en las TICs",R.drawable.img_confe55));
 
         AdaptadorConferencias = new AdaptadorConferencias(getActivity(), ItemsConferencias);
         listaItemsConferencias.setAdapter(AdaptadorConferencias);
