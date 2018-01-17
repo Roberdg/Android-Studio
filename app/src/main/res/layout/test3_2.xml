@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pregunta 2 \n ...."
+        android:text="Pregunta 2. \n¿Qué derechos patrimoniales hay en la ley de propiedad intelectual? "
         android:textSize="18dp"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
@@ -24,9 +24,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="69dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 1.." />
+        android:text="Pueden cederse, obtención de beneficios, reproducción, distribución, comunicación pública y transformación." />
 
     <RadioButton
         android:id="@+id/test3_p2r2"
@@ -35,9 +35,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="109dp"
+        android:layout_marginTop="89dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 2.." />
+        android:text="No se pueden ceder, obtención de beneficios, reproducción, distribución, comunicación pública y transformación." />
 
     <RadioButton
         android:id="@+id/test3_p2r3"
@@ -48,7 +48,7 @@
         android:layout_below="@+id/textView8"
         android:layout_marginTop="149dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 3.." />
+        android:text="Pueden cederse, no se obtienen beneficios, reproducción, distribución, comunicación pública y transformación." />
 
     <RadioButton
         android:id="@+id/test3_p2r4"
@@ -57,9 +57,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="189dp"
+        android:layout_marginTop="219dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 4.." />
+        android:text="Pueden cederse, obtención de beneficios, reproducción,  no distribución, comunicación pública y transformación." />
 
     <Button
         android:id="@+id/test3_siguiente2"

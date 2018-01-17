@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_noticia3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,7 +16,7 @@
         android:id="@+id/txtTitle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Noticia 4 \n ...."
+        android:text="¿De qué manera puede afectar el fin de la neutralidad en Internet en EEUU a España?"
         android:textSize="18dip"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
@@ -21,8 +26,9 @@
     <ImageView
         android:id="@+id/imgItem"
         android:layout_width="160dp"
-        android:layout_height="100dp"
+        android:layout_height="200dp"
         android:layout_marginTop="75dp"
+        android:background="@drawable/neutralidad_red"
         android:layout_alignLeft="@+id/txtDescripcion"
         android:layout_alignStart="@+id/txtDescripcion"
         android:layout_alignRight="@+id/txtTitle"
@@ -30,12 +36,42 @@
 
     <TextView
         android:id="@+id/txtDescripcion"
-        android:text="Descripcion 4 \n ...."
+        android:text="Estados Unidos ha votado para acabar con Internet tal y como lo conocemos. Un proyecto que pretende acotar la libertad en Internet y que sean las grandes corporaciones las que decidan cuáles son los límites en la red.
+\n\nCuenta atrás para el fin de Internet tal y como lo conocemos
+\n\nLa neutralidad en la red un principio que aboga por que el acceso a la información en Internet debe ser libre. Un principio que a día de hoy se tambalea. ¿Qué está sucediendo en Estados Unidos?
+\n\n¿Afectará esta decisión a España y a la Unión Europea de alguna manera? No de manera directa. A día de hoy, la UE se rige por su propia normativa, que fue aprobada el año pasado. De hecho, cuenta con una serie de directrices emitidas por el Organismo de Reguladores Europeos de Comunicaciones Electrónicas (Berec), que favorecen que Internet siga siendo neutral como garantizar a los usuarios acceder y distribuir libremente la información y el contenido, ejecutar aplicaciones y utilizar los servicios que elijan.
+\n\n'Estados Unidos incentivará a que las compañías de otros países pretendan hacer lo propio'
+\n\nNo obstante, esta decisión sí que puede sentar un precedente para que los proveedores de Internet de los distintos países europeos pidan a sus respectivos gobiernos acabar con la neutralidad para 'restaurar el orden de la libertad en Internet' y favorecerse así de las ventajas de poder controlar Internet, tal y como explica el periodista Tim Karr, uno de los portavoces de la plataforma 'Battle the net': A pesar de que muchos países ya han implementado sus propias reglas de neutralidad de red, como es el caso de la Unión Europea, la destrucción de las mismas en Estados Unidos incentivará a que las compañías de otros países pretendan hacer lo propio.
+    \n\nPor esa misma razón, Karr pide que a sociedad europea que se organice, al igual que sucede en Estados Unidos con movimientos como 'Battle for the net': 'Deberían organizar grupos en sus países para exigir fuertes protecciones contra la neutralidad en la red. Cuantas más leyes haya en los libros a nivel mundial, más difícil será para un país negar a los usuarios de Internet el derecho a navegar por la red de una manera libre y abierta', cuenta Karr.
+    \n\nEl movimiento que lucha por preservar la neutralidad de Internet
+    \n\nLa organización 'Battle for the net', que lucha por preservar la neutralidad de Internet en Estados Unidos, cuenta con el respaldo de compañías como Google, Facebook o Amazon, entre otras
+    \n\n'Europa cuenta con una base legal sólida'
+    \n\nPor otro lado, el director de la Autoridad Reguladora de las Comunicaciones electrónicas y postales (ARCEP), Sébastien Soriano, se muestra tranquilo puesto que, bajo su punto de vista, las reglas de neutralidad de la red en Europa se basan en una base legal sólida, la regulación de la neutralidad en la red adoptada en 2015 por el Parlamento Europeo y el Consejo de la Unión Europea.
+    \n\nEn declaraciones a Cadena SER, Soriano ha explicado que, con el objetivo de evitar casos como el de Estados Unidos, la Comisión Europea y los colegisladores prevén una revisión periódica de la regulación para favorecer la neutralidad en la red en la Unión Europea para 2019. Por otro lado, Soriano también ha revelado que el Berec emitirá un informe de evaluación en 2018 para ayudar tanto a la Comisión Europea, como al Parlamento Europeo y el Consejo de la Unión Europea a decidir si es necesaria una revisión de las reglas actuales. Bajo su punto de vista, no hay ningún problema con las reglas actuales, basadas en la práctica de los últimos años.
+    \n\n'La neutralidad de la red en Europa está aquí para quedarse'
+    \n\nLa política alemana del Partido Pirata de Alemania y miembro del Parlamento Europeo desde el 2014, Julia Reda, opina que a pesar de no ser una 'ley perfecta', la Unión Europea cuenta con una ley que previenen sucesos como los que van a suceder en Estados Unidos: En Europa, a diferencia de en Estados Unidos, la neutralidad de la red está consagrada en la ley. No es una ley perfecta, puesto que deja algunas lagunas abiertas, pero es más segura ante el tipo de cambios de política repentinos como los que estamos viendo actualmente en los Estados Unidos.
+    \n\nEn lo que respecta a Estados Unidos, Reda considera que lo que está sucediendo es un 'desarrollo trágico' para los consumidores que, además, da un mal ejemplo a nivel mundial y envalentona a los enemigos de una Internet libre y abierta en todo el mundo: También puede afectar negativamente a los servicios de Internet basados en la Unión Europea cuando tengan que pagar para competir en un mercado de Internet estadounidense no neutral. No obstante, Reda asegura que (por el momento) la neutralidad de la red en Europa 'está aquí para quedarse'.
+    \n\nEn Europa hay una mayor tradición de proteger los derechos de la ciudadanía frente a los beneficios empresariales
+    \n\nPor lo tanto, todo apunta a que la neutralidad en la red a nivel europeo está garantizada. ¿Cuál es la situación en España? En declaraciones a Cadena SER, el profesor en la Facultad de Ingeniería de la Universidad de Deusto e investigador en el grupo Deusto LearningLab, Pablo Garaizar también opina que la tradición europea puede anteponerse al nuevo orden estadounidense.
+    \n\nNo obstante, Garaizar considera que hay 'algunos motivos para preocuparse'. Por una parte, Internet está dejando de ser una red en la que cualquiera puede participar para convertirse en un 'coto privado' de unas pocas empresas: Las redes sociales de uso masivo son como las marcas conocidas de productos alimenticios: bajo una supuesta variedad en la oferta, realmente casi todas están en manos de unas pocas debido a dinámicas empresariales de 'el ganador se lleva todo'.
+    \n\nPor otro lado, el profesor asegura que el hecho de que los operadores de telecomunicaciones que prestan sus servicios en Europa son los mismos que dominan el sector a nivel mundial, pueda provocar que intenten aprovechar 'la inercia de lo ocurrido en Estados Unidos' para portar el modelo a otros países. No obstante, considera que el fin de la neutralidad no llegará  (de forma directa) pronto a Europa. A pesar de ello, considera que hay muchas tendencias a su favor y cada vez será más complicado resistir.
+    \n\nCómo reforzar estas medidas en España
+    \n\nGaraizar opina que es primordial concienciar a la ciudadanía que el tema de la neutralidad en la red se trata de un grave problema que nos afecta a todos: Cuando algo no se considera un problema es muy difícil movilizar a la gente para que luche por sus derechos.
+    \n\nPor otro lado, también considera necesario un esfuerzo político por legislar a favor de la neutralidad de la red: Debería ser uno de los programas políticos de los partidos que presuman conocer cómo funciona la Red. A la pregunta sobre si la tecnología tiene una ideología, Garaizar explica que la ideología de la tecnología coincide con la de aquellas personas que han financiado el desarrollo tecnológico de la misma.
+    \n\nPor esa misma razón, y dado que cada vez son más los procesos críticos en la vida de las personas tales como el acceso a la sanidad, a la vivienda o a la educación) que dependen de algortimos a partir de datos no validados y llenos de sesgos, Garaizar opina que estaría bien esforzarse por diseñar tecnología cuya ideología coincida con la de la Declaración de los Derechos Humanos o acuerdos de base similares pensados en el bien humano.
+    \n\n'Zero rating', la laguna legal para trasladar este sistema a la Unión Europea
+    \n\nA pesar de que las normas del Berec impidan el fin de la neutralidad en la red en la Unión Europea, existe una laguna legal, conocida como 'zero rating', mediante el que las operadoras pueden excluir ciertas aplicaciones de consumo de datos de la tarifa mensual tras un acuerdo con la aplicación.
+    \n\nSe trata de una práctica muy criticada por los defensores de la neutralidad en la red puesto que, una vez acabada la tarifa de datos, el consumidor podrá continuar utilizando acceder a las aplicaciones incluidas en este plan y no a todas por igual. Al mismo tiempo, también es considerada una discriminación de precios anticompetitiva diseñada para favorecer a las aplicaciones y servicios de las operadoras al poner a sus competidores en desventaja.
+    \n\nUna laguna que ha llegado a España de mano de Vodafone Pass. Un servicio que ofrece paquetes de datos en los que se regala la trasmisión de datos desde determinados servicios, haciendo muy difícil que alternativas a los servicios ya dominantes puedan competir, tal y como explica Garaizar.
+    \n\nVodafone ofrece Pass para utilizar apps de música, redes sociales, vídeo y mapas de forma ilimitada sin gastar datos.
+\n\nVodafone ofrece Pass para utilizar apps de música, redes sociales, vídeo y mapas de forma ilimitada sin gastar datos. / Vodafone
+\n\nEn definitiva, el fin de Internet tal y como lo conocemos en Estados Unidos no tendrá consecuencias directas en Europa. No obstante, son varios los factores que apuntan a que será uno de los temas a tratar tanto en España como en la Unión Europea durante los próximos años. ¿Conseguirán resistir al nuevo orden?\n\n"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:textSize="14dip"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="290dp"
         android:layout_marginLeft="16dp"
         android:textColor="#ffffff"/>
 
 </RelativeLayout>
+</ScrollView>

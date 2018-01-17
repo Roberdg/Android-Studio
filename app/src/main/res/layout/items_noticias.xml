@@ -17,31 +17,26 @@
 
     <ImageView
         android:id="@+id/imgItem"
-        android:layout_width="160dp"
+        android:layout_width="120dp"
         android:layout_height="100dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginLeft="100dp" />
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/txtTitle"
+        android:layout_alignLeft="@+id/txtTitle"
+        android:layout_alignStart="@+id/txtTitle"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
 
     <TextView
         android:id="@+id/txtDescripcion"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="14dip"
-        android:layout_marginTop="160dp"
         android:layout_marginLeft="16dp"
-        android:textColor="#ffffff"/>
-
-    <!--<Button
-        android:id="@+id/boton_leer"
-        android:layout_width="30dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="15dp"
-        android:text="+"
-
-        android:background="@drawable/rounded_button"
-        android:layout_below="@+id/txtDescripcion"
-        android:layout_alignRight="@+id/txtTitle"
-        android:layout_alignEnd="@+id/txtTitle" />-->
+        android:textColor="#ffffff"
+        android:layout_marginStart="16dp"
+        android:layout_alignTop="@+id/imgItem"
+        android:layout_toRightOf="@+id/imgItem"
+        android:layout_toEndOf="@+id/imgItem" />
 
 
 </RelativeLayout>

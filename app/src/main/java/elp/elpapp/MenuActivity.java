@@ -28,7 +28,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class MenuActivity extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener{
+public class MenuActivity extends AppCompatActivity  {
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
@@ -38,6 +38,7 @@ public class MenuActivity extends AppCompatActivity  implements NavigationView.O
     private DrawerLayout drawerL;
     private ActionBarDrawerToggle toggle;
     private Intent intent;
+    private Uri uri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,21 +90,63 @@ public class MenuActivity extends AppCompatActivity  implements NavigationView.O
                         startActivity(intent);
 
                         break;
+                    case R.id.campus:
+                        Toast.makeText(MenuActivity.this,"Campus Virtual", Toast.LENGTH_SHORT).show();
+                        uri = Uri.parse("http://www.ucm.es/campusvirtual");
+                        intent = new Intent(Intent.ACTION_VIEW,uri);
+                        startActivity(intent);
+                        break;
                     case R.id.tutorias:
                         Toast.makeText(MenuActivity.this,"Profesores y tutorias", Toast.LENGTH_SHORT).show();
-                        Uri uriN = Uri.parse("http://informatica.ucm.es/profesores-y-tutorias");
-                        intent = new Intent(Intent.ACTION_VIEW,uriN);
+                        uri = Uri.parse("http://informatica.ucm.es/profesores-y-tutorias");
+                        intent = new Intent(Intent.ACTION_VIEW,uri);
+                        startActivity(intent);
+                        break;
+                    case R.id.examenes:
+                        Toast.makeText(MenuActivity.this,"Exámenes", Toast.LENGTH_SHORT).show();
+                        uri = Uri.parse("http://informatica.ucm.es/examenes-por-curso-y-grupo");
+                        intent = new Intent(Intent.ACTION_VIEW,uri);
                         startActivity(intent);
                         break;
                     case R.id.nav_correo:
                         Toast.makeText(MenuActivity.this,"Correo electrónico del usuario", Toast.LENGTH_SHORT).show();
-                        Uri uri = Uri.parse("http://gmail.com");
+                        uri = Uri.parse("http://gmail.com");
                         intent = new Intent(Intent.ACTION_VIEW,uri);
                         startActivity(intent);
                         break;
                     case R.id.nav_cerrarsesion:
                         Toast.makeText(MenuActivity.this,"Ha cerrado la sesión", Toast.LENGTH_SHORT).show();
                         intent = new Intent(MenuActivity.this, LoginActivity.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.wiki_temario:
+                        uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/Página_principal#Temario_ELP");
+                        intent = new Intent(Intent.ACTION_VIEW,uri);
+                        startActivity(intent);
+                        break;
+                    case R.id.wiki_trabajo:
+                        uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/Trabajos_ELP");
+                        intent = new Intent(Intent.ACTION_VIEW,uri);
+                        startActivity(intent);
+                        break;
+                    case R.id.wiki_conferencias:
+                        uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/Conferencias");
+                        intent = new Intent(Intent.ACTION_VIEW,uri);
+                        startActivity(intent);
+                        break;
+                    case R.id.wiki_portal:
+                        uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/FdIwiki_ELP:Portal_de_la_comunidad");
+                        intent = new Intent(Intent.ACTION_VIEW,uri);
+                        startActivity(intent);
+                        break;
+                    case R.id.wiki_interes:
+                        uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/FdIwiki_ELP:EnlacesInteres");
+                        intent = new Intent(Intent.ACTION_VIEW,uri);
+                        startActivity(intent);
+                        break;
+                    case R.id.wiki_ayuda:
+                        uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/Ayuda:Tutorial");
+                        intent = new Intent(Intent.ACTION_VIEW,uri);
                         startActivity(intent);
                         break;
                     default:
@@ -217,9 +260,6 @@ public class MenuActivity extends AppCompatActivity  implements NavigationView.O
                 case 2:
                     Test test = new Test();
                     return test;
-                case 3:
-                    Wiki wiki = new Wiki();
-                    return wiki;
                 default:
                     return null;
             }
@@ -230,7 +270,7 @@ public class MenuActivity extends AppCompatActivity  implements NavigationView.O
         @Override
         public int getCount() {
             // Show 4 total pages.
-            return 4;
+            return 3;
         }
 
         @Override
@@ -239,11 +279,9 @@ public class MenuActivity extends AppCompatActivity  implements NavigationView.O
                 case 0:
                     return "NOTICIAS";
                 case 1:
-                    return "VIDEOS";
+                    return "CONFERENCIAS";
                 case 2:
                     return "TEST";
-                case 3:
-                    return "WIKI";
             }
             return null;
         }
@@ -262,64 +300,5 @@ public class MenuActivity extends AppCompatActivity  implements NavigationView.O
             super.onBackPressed();
         }
     }
-
-    @SuppressWarnings("StatementWithEmptyBody")
-    @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        //FragmentManager fragmentManager = getSupportFragmentManager();
-        Fragment fragment;
-        int id = item.getItemId();
-
-        if (id == R.id.nav_perfil) {
-            // Handle the camera action
-
-            /*fragment = new Perfil();
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.container, fragment);
-            ft.commit();*/
-
-            //fragmentManager.beginTransaction().replace(R.id.container,new Perfil()).commit();
-
-        } else if (id == R.id.nav_estadisticas) {
-
-        } else if (id == R.id.tutorias) {
-            /*Uri uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/Ayuda:Tutorial");
-            Intent intent = new Intent(Intent.ACTION_VIEW,uri);
-            startActivity(intent);*/
-        } else if (id == R.id.nav_correo) {
-            /*Uri uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/Ayuda:Tutorial");
-            Intent intent = new Intent(Intent.ACTION_VIEW,uri);
-            startActivity(intent);*/
-        } else if (id == R.id.nav_cerrarsesion) {
-
-        }
-
-        drawerL = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawerL.closeDrawer(GravityCompat.START);
-        return true;
-    }
-
-    /********************************************************/
-    /*@Override
-    protected void onPostCreate(Bundle savedInstanceState) {
-        super.onPostCreate(savedInstanceState);
-        // Sync the toggle state after onRestoreInstanceState has occurred.
-        mDrawerToggle.syncState();
-    }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-        mDrawerToggle.onConfigurationChanged(newConfig);
-    }
-
-    @Override
-    public boolean onPrepareOptionsMenu(Menu menu) {
-        // If the nav drawer is open, hide action items related to the content view
-        boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
-        menu.findItem(R.id.action_websearch).setVisible(!drawerOpen);
-        return super.onPrepareOptionsMenu(menu);
-    }*/
 
 }

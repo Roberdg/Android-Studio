@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pregunta 2 \n ...."
+        android:text="Pregunta 2. \n Tipos de delitos informáticos"
         android:textSize="18dp"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
@@ -24,9 +24,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="69dp"
+        android:layout_marginTop="9dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 1.." />
+        android:text="Delitos contra la intimidad, utilización abusiva de equipos terminales de telecomunicaciones, delitos de daños, con especial referencia al sabotaje informático, delitos contra el material con copyright." />
 
     <RadioButton
         android:id="@+id/test5_p2r2"
@@ -35,9 +35,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="109dp"
+        android:layout_marginTop="99dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 2.." />
+        android:text="Delitos contra la intimidad, utilización abusiva de equipos terminales de telecomunicaciones, delitos de daños, con especial referencia al sabotaje informático, delitos relativos al mercado y a los consumidores." />
 
     <RadioButton
         android:id="@+id/test5_p2r3"
@@ -46,9 +46,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="149dp"
+        android:layout_marginTop="199dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 3.." />
+        android:text="Delitos contra la intimidad, utilización abusiva de equipos terminales de telecomunicaciones, delitos de daños, con especial referencia al sabotaje informático, delitos contra el material con copyright, delitos relativos al mercado y a los consumidores." />
 
     <RadioButton
         android:id="@+id/test5_p2r4"
@@ -57,9 +57,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="189dp"
+        android:layout_marginTop="299dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 4.." />
+        android:text="Delitos de daños, con especial referencia al sabotaje informático, delitos contra el material con copyright, delitos relativos al mercado y a los consumidores." />
 
     <Button
         android:id="@+id/test5_siguiente2"
@@ -67,12 +67,9 @@
         android:layout_height="wrap_content"
         android:text="Siguiente"
         android:background="@drawable/rounded_button"
-        android:layout_alignBaseline="@+id/test5_anterior1"
-        android:layout_alignBottom="@+id/test5_anterior1"
-        android:layout_toRightOf="@+id/test5_anterior1"
-        android:layout_toEndOf="@+id/test5_anterior1"
-        android:layout_marginLeft="60dp"
-        android:layout_marginStart="60dp" />
+        android:layout_marginLeft="236dp"
+        android:layout_marginTop="440dp"
+        />
 
     <Button
         android:id="@+id/test5_anterior1"
@@ -80,12 +77,9 @@
         android:layout_height="wrap_content"
         android:text="Anterior"
         android:background="@drawable/rounded_button"
-        android:layout_marginBottom="77dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/test5_p2r4"
-        android:layout_alignStart="@+id/test5_p2r4"
-        android:layout_marginLeft="59dp"
-        android:layout_marginStart="59dp" />
+        android:layout_marginLeft="89dp"
+        android:layout_marginTop="440dp"
+         />
 
 
 </RelativeLayout>

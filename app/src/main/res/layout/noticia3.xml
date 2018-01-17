@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_noticia3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,7 +16,7 @@
         android:id="@+id/txtTitle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Noticia 3 \n ...."
+        android:text="¿Debe enseñarse programación en todas las carreras de la universidad?"
         android:textSize="18dip"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
@@ -21,8 +26,9 @@
     <ImageView
         android:id="@+id/imgItem"
         android:layout_width="160dp"
-        android:layout_height="100dp"
+        android:layout_height="200dp"
         android:layout_marginTop="75dp"
+        android:background="@drawable/programacion"
         android:layout_alignLeft="@+id/txtDescripcion"
         android:layout_alignStart="@+id/txtDescripcion"
         android:layout_alignRight="@+id/txtTitle"
@@ -30,12 +36,45 @@
 
     <TextView
         android:id="@+id/txtDescripcion"
-        android:text="Descripcion 3 \n ...."
-        android:layout_width="fill_parent"
+        android:text="Piénsalo por un momento. Estás leyendo este texto en un ordenador, un móvil o una tableta. Es probable que tu trabajo esté relacionado con la informática en mayor o menor medida y, sin embargo, el grueso de la población desconoce los lenguajes de programación que controlan dichos dispositivos.
+\n\n¿Serías capaz de programar una sencilla herramienta que te permitiera automatizar los envíos de correo electrónico a tus clientes? ¿O una aplicación capaz de registrar a qué horas entras y sales de casa y del trabajo teniendo en cuenta tu localización vía el GPS de tu móvil? Si la respuesta es negativa, eres una de esas muchas personas que no tienen unos conocimientos básicos sobre lenguajes de programación. Pero, ¿es necesario adquirir esos conocimientos durante nuestra formación? ¿Deberían enseñarse lenguajes de programación en cualquier carrera, desde las más técnicas a una de humanidades?
+\n\n“Creo que todo el mundo en este país debería aprender a programar”. La frase no la dice una persona cualquiera. Es de Steve Jobs, en una entrevista televisiva que puedes consultar bajo estas líneas. “Aprender a programar te enseña a pensar. Es como estudiar derecho, no digo que todo el mundo tenga que ser abogado pero es útil porque te ayuda a pensar de una cierta manera, de la misma manera que la programación te obliga a pensar de otra. Todo el mundo debería tomar uno o dos años de su vida aprendiendo a programar”, aseguraba el fundador de Apple. Hace pocos días era su sucesor al frente de la compañía, Tim Cook, el que aseguraba que programar es más importante que aprender inglés.
+\n\nAlgunos países parecen haberse tomado en serio las palabras de Steve Jobs. El gobierno chino aprobó el año pasado un plan para que los niños comiencen a estudiar programación a partir de los seis años a la que, con el paso de los años, se le sumarán nociones en diferentes lenguajes. El plan no se detiene ahí ya que pretende que, a partir de los 11 años, los alumnos también reciban clases de robótica.
+\n\nEn España, la publicación de un estudio en abril de 2016 ofrecía algunas pinceladas al respecto. A partir de más de 2.000 encuestas realizadas a padres y a alumnos de entre 12 y 16 años certificaba que sólo un 5% de los alumnos de primaria y un 16% de los de secundaria utilizaba dispositivos digitales para programar. El 24% admitía conocer algún lenguaje de programación, siendo Scratch el más popular entre los alumnos. En el ámbito paterno una cifra resultaba esclarecedora: el 73% creía que se debería enseñar programación en el colegio.
+\n\n¿Lenguajes de programación o programación computacional?
+\n\nFederico Peinado, profesor de la facultad de Informática de la Universidad Complutense de Madrid, considera que la pregunta puede llevar a engaño ya que hay que distinguir entre dos ámbitos muy distintos a la hora de plantearse si la programación debería impartirse en las aulas de manera obligatoria.
+\n\n“La programación computacional es una disciplina en la que sí sería interesante que todo el mundo estuviese formado ya que te explica cómo piensa una máquina, cómo se le dan órdenes y cómo se programa para que automatice procesos y nos ayude a hacer tareas”, aclara.
+Federico Peinado, durante una conferencia. (Cedida por el autor) Federico Peinado, durante una conferencia. (Cedida por el autor)
+\n\nFrente a esa disciplina, Peinado cree que el estudio de lenguajes de programación está enfocado a un público más concreto que no tiene por qué estar familiarizado con unas herramientas muy técnicas. “Creo que no sería adecuado que todas las carreras tuvieran una asignatura de programación textual, orientada a objetos y estructurada como puede ser Java”.
+\n\nPara el profesor de la Universidad Complutense, “tiene sentido” que esos conocimientos se impartan en carreras donde los futuros licenciados vayan a necesitar esas habilidades para desempeñar su trabajo. “No veo a un odontólogo o un médico estudiando programación porque no sería de utilidad, no lo veo relacionado”, zanja.
+\n\nFrente al escepticismo de Peinado, otros profesores de otros ámbitos consideran que sí se deberían impartir estos estudios no sólo en la Universidad sino incluso antes, en el instituto. Es el caso de Mar Marcos, profesora en la facultad de Comunicación de la Complutense, que pone ejemplos concretos al respecto. “A menudo con programas de edición de vídeo o de fotografía los alumnos no pueden determinar problemas porque no tienen siquiera una orientación básica”, ilustra.
+\n\nMar Marcos considera fundamental el aprendizaje de lenguajes de programación. (UCM) Mar Marcos considera fundamental el aprendizaje de lenguajes de programación. (UCM)
+\n\nPara Marcos, el “simple hecho de saber trastear con un ordenador sería muy importante” y pone el ejemplo de los colegios en los que se imparte robótica como el modelo a seguir dentro de la comunidad educativa: “Se debería empezar a enseñar en Bachillerato. Incluso antes”. Una opinión que también comparte Peinado, aunque con matices: “Sí creo que el pensamiento computacional debería enseñarse a un nivel por debajo de la Universidad para que todos tuviésemos una formación básica igual que tenemos en cultura general y por eso estudiamos matemáticas, lengua o sociales”.
+\n\nUn último testimonio en este punto ayuda a poner de relieve ambas posturas. Ricardo Galli, fundador de Menéame y también doctor en Informática es partidario del aprendizaje de lenguajes de programación pero en un entorno muy concreto: Es muy visible en estudiantes de Informática: abandonan la carrera después del primer año porque salen de un bachillerato científico** sin tener ni idea de programación**.
+    Ricardo Galli, fundador de Menéame. Ricardo Galli, fundador de Menéame.
+    \n\nGalli va más allá al señalar que la inmensa mayoría de estudiantes no saben qué es un algoritmo y acude a otras ciencias, como la estadística, la física o la química, para señalar la formación que sí reciben los alumnos en esas áreas y que les permiten salir mejor preparados al ámbito universitario.
+     \n\nEl futuro ¿pasa? por la programación
+    \n\nIncluso dentro de los círculos profesionales dedicados a la ingeniería, la informática o la administración de sistemas, la pregunta se encuentra con partidarios y detractores. Omar Miranda, administrador de redes en Claranet argumenta que en sus más de diez años de carrera profesional ha programado “en pocas ocasiones”. Miranda recuerda que “un administrador de redes” puede desempeñar su labor sin tener conocimientos en lenguajes de programación aunque también señala la importancia de contar con una formación básica: Sí es bueno al menos entender el lenguaje de programación para, por ejemplo, hacer scripts —pequeños programas para automatizar tareas— que te ayuden en tu día a día.
+    \n\n Diagrama que muestra la integración de procedimientos que propone la tendencia del devops.
+    \n\nPero Miranda apunta hacia una nueva práctica que pretende aglutinar el conocimiento en todos esos ámbitos para terminar con esa dicotomía dentro del ámbito de las tecnologías de la información. “La tendencia se llama devops y pretende que todos los profesionales del sector sepan programar para automatizar todos los procesos posibles”.
+    \n\nDevOps, que es un acrónimo de las palabras development (desarrollo) y operations (operaciones) , pretende implantar una cultura en la que el desarrollo de software y la administración de sistemas se haga de manera integrada lo que repercutirá positivamente en las compañías informáticas al permitirles una mayor celeridad en el desarrollo.
+    \n\nMás allá de la especialización en programación u otra área, el entorno informático apuesta por la convergencia de disciplinas. El fenómeno devops es un buen ejemplo.
+    \n\nUn último caso muestra hasta qué punto son necesarios los conocimientos en programación para sacar adelante determinados proyectos profesionales. Sharing Academy es una plataforma desarrollada en Barcelona que pretende actuar de intermediaria entre alumnos universitarios que dominan asignaturas concretas con aquellas personas que necesitan un refuerzo.
+    \n\nCreada por Jordi Llonch, un antiguo piloto de avión que decidió montar su propia empresa, Sharing Academy nació en parte gracias a los problemas que su creador tenía con la programación. “Sharing Academy surgió porque no era capaz de avanzar con la asignatura de programación y necesitaba un profesor particular”, explica Llonch.
+    Jordi Llonch, uno de los fundadores de Sharing Academy, durante el Mobile World Congress. Jordi Llonch, uno de los fundadores de Sharing Academy, durante el Mobile World Congress.
+    \n\nAunque el responsable de Sharing Academy admite que no le apasiona programar —“deberías haber visto la primera versión de la plataforma”, bromea—, también admite que todas las personas en la compañía “tienen algunas nociones de programación” dado el componente tecnológico de su sector profesionales.
+    \n\n“Todas las personas que toman decisiones respecto al producto tienen unos conocimientos básicos porque, aunque no programen, es necesario que esas personas comprendan las implicaciones técnicas y los recursos que exige implementar una nueva funcionalidad”, explica.
+    \n\nLas asignaturas de programación copan el 18% de la oferta en aquellos grados donde se imparte y ocupan la primera posición
+    \n\nLlonch finaliza poniendo un ejemplo de su empresa. Su director de marketing, que en un principio sólo se encargaba de la difusión y captación de usuarios, “ha aprendido a programar para ser más ágiles”. Según Llonch, ahora esa persona no sólo le ahorrar tiempo y dinero a la empresa, sino que lo hace “siendo consciente de los recursos necesarios para desarrollar determinadas tareas”.
+    \n\nSegún Sharing Academy, las asignaturas de programación copan el 18% de la oferta en aquellos grados donde se imparte y ocupan la primera posición, seguida de cerca por las matemáticas, con el 16% de la demanda total. Frente a las voces que explican las bondades de los conocimientos en lenguajes de programación, Federico Peinado hace una última llamada a la prudencia al respecto: “Hay un cierto misticismo que envuelve a la informática y hay cierta ignorancia. Está bien que se aprenda para que se entienda que no se trata de magia negra. Está bien saber qué pasa por debajo en un ordenador pero a un nivel experto sólo lo conocerán personas expertas”.
+    \n\nTambién desde el ámbito de la empresa, Ricardo Galli lanza una última reflexión, ya que no cree que saber programar deba ser obligatorio en cualquier sector productivo. Todas las carreras técnicas tienen cosas de programación, los físicos, químicos, bioquímicos o cualquiera con un tratamiento mínimo de estadísticas hace años que lo hacen. Sería impensable hacer física sin saber programar pero, por ejemplo, no veo a un periodista que necesite ese conocimiento a no ser que vaya a trabajar con datos.\n\n"
+
+    android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:textSize="14dip"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="290dp"
         android:layout_marginLeft="16dp"
         android:textColor="#ffffff"/>
 
 </RelativeLayout>
+</ScrollView>

@@ -63,12 +63,11 @@ public class Noticias extends Fragment{
     private void loadItemsNoticias(){
 
         ItemsNoticia = new ArrayList<DatosNoticias>();
-        ItemsNoticia.add(new DatosNoticias("Test 1","Referido al primer tema", R.drawable.imagen1));
-        ItemsNoticia.add(new DatosNoticias("Test 2","Referido al segundo tema", R.drawable.imagen1));
-        ItemsNoticia.add(new DatosNoticias("Test 3","Referido al tercer tema", R.drawable.imagen1));
-        ItemsNoticia.add(new DatosNoticias("Test 4","Referido al cuarto tema", R.drawable.imagen1));
-        ItemsNoticia.add(new DatosNoticias("Test 5","Referido al quinto tema", R.drawable.imagen1));
-
+        ItemsNoticia.add(new DatosNoticias("Facebook dará prioridad a los contenidos personales frente a los corporativos.","La red social Facebook anunció hoy que en el muro de sus usuarios dará prioridad a los contenidos publicados por familiares o amigos frente a ...", R.drawable.facebook));
+        ItemsNoticia.add(new DatosNoticias("El CEO de Intel vendió casi todas sus acciones antes de hacerse público el fallo de seguridad de sus chips","Brian Krzanich, actual CEO de Intel, vendió el pasado mes de noviembre la mayoría de sus acciones en la compañía, justo antes de ...", R.drawable.ceo));
+        ItemsNoticia.add(new DatosNoticias("¿Debe enseñarse programación en todas las carreras de la universidad?","Piénsalo por un momento. Estás leyendo este texto en un ordenador, un móvil o una tableta. Es probable que tu trabajo esté relacionado con la informática en ...", R.drawable.programacion));
+        ItemsNoticia.add(new DatosNoticias("¿De qué manera puede afectar el fin de la neutralidad en Internet en EEUU a España?","Estados Unidos ha votado para acabar con Internet tal y como lo conocemos. Un proyecto que pretende acotar la libertad en Internet y que sean las grandes ... ", R.drawable.neutralidad_red));
+        ItemsNoticia.add(new DatosNoticias("Auditoria express de seguridad de vulnerabilidades en los sistemas y redes IT","Durante tres semanas, la compañía verifica y valida la infraestructura informática en cuestión y ofrece la solución o el servicio de seguridad necesario para ...\n\n\n", R.drawable.auditoria_express));
         AdaptadorNoticia = new AdaptadorNoticia(getActivity(), ItemsNoticia);
         listaItems.setAdapter(AdaptadorNoticia);
 

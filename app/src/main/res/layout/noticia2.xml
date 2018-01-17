@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_noticia2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,17 +16,18 @@
         android:id="@+id/txtTitle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Noticia 2 \n ...."
+        android:text="El CEO de Intel vendió casi todas sus acciones antes de hacerse público el fallo de seguridad de sus chips"
         android:textSize="18dip"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:layout_marginLeft="16dp"
         android:textColor="#ffffff"/>
 
     <ImageView
         android:id="@+id/imgItem"
+        android:background="@drawable/ceo"
         android:layout_width="160dp"
-        android:layout_height="100dp"
+        android:layout_height="200dp"
         android:layout_marginTop="75dp"
         android:layout_alignLeft="@+id/txtDescripcion"
         android:layout_alignStart="@+id/txtDescripcion"
@@ -30,12 +36,21 @@
 
     <TextView
         android:id="@+id/txtDescripcion"
-        android:text="Descripcion 2 \n ...."
+        android:text="Brian Krzanich, actual CEO de Intel, vendió el pasado mes de noviembre la mayoría de sus acciones en la compañía, justo antes de que se conociera el grave fallo de seguridad que afecta a sus procesadores. Ganó alrededor de 24 millones de dólares (19,9 millones de euros) en esta transacción.
+\n\nEn su momento esta monumental venta de acciones levantó sospechas ya que Krzanich se quedó solamente con las 250.000 acciones a las que le obliga el hecho de ser ejecutivo de Intel. Pero ahora la vulnerabilidad descubierta en todos los procesadores de Intel, y que también afecta a la gran mayoría de chips de su competencia, empuja a pensar que actuó de forma irregular.
+\n\nSegún declaraciones oficiales de Intel a varios medios estadounidenses, esta venta no tiene nada que ver con el agujero de seguridad descubierto ayer.
+\n\nDado que Krzanich vendió sus acciones el día 29 de noviembre, y puesto que el equipo de investigadores de Google que ha descubierto los fallos de seguridad informó a la compañía del problema el pasado junio, es de suponer que el CEO de Intel sabía de este problema con su producto.
+\n\nTras conocerse la información sobre los problemas en los procesadores, el valor en Bolsa de Intel (INTC) se desplomaba un 3,39% (1,59 puntos), quedando en 45,26 dólares por acción al cierre de sesión del miércoles. Krzanich vendió sus valores en cartera a un precio ligeramente menor, 43,95 dólares por acción, pero dado que la información sobre los fallos de seguridad no se conoció hasta la tarde de ayer, es más que probable que el valor en Bolsa de Intel descienda aún más
+\n\nEsto podría ser un movimiento fraudulento por parte del CEO de Intel, y seguramente sea investigado por la Comisión de Bolsa y Valores de EEUU, pues invertir con información privilegiada es un delito.
+\n\nEl procedimiento llevado a cabo por Krzanich para la venta de valores podría escudarle, sobre el papel, de cualquier acusación. Muchos directivos evitan acusaciones por información privilegiada poniendo en venta sus acciones dentro de un calendario prefijado.
+\n\nEn el caso de Krzanich, el directivo creó su plan de acción el día 30 de octubre, un mes antes de que se realizara la venta automática de acciones. En total, el día 29 de noviembre vendió 889.878 acciones a 44,05 dólares cada una. Dado que la información sobre el fallo de los procesadores se sabía desde junio y Krzanich planeó su venta en octubre, podría haber incurrido en un delito.
+\n\nAún no se ha hecho público si habrá una investigación por un posible fraude.\n\n"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:textSize="14dip"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="290dp"
         android:layout_marginLeft="16dp"
         android:textColor="#ffffff"/>
 
 </RelativeLayout>
+</ScrollView>

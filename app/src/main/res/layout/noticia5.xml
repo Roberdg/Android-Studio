@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_noticia3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,7 +16,7 @@
         android:id="@+id/txtTitle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Noticia 5 \n ...."
+        android:text="Auditoria express de seguridad de vulnerabilidades en los sistemas y redes IT "
         android:textSize="18dip"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
@@ -21,8 +26,9 @@
     <ImageView
         android:id="@+id/imgItem"
         android:layout_width="160dp"
-        android:layout_height="100dp"
+        android:layout_height="200dp"
         android:layout_marginTop="75dp"
+        android:background="@drawable/auditoria_express"
         android:layout_alignLeft="@+id/txtDescripcion"
         android:layout_alignStart="@+id/txtDescripcion"
         android:layout_alignRight="@+id/txtTitle"
@@ -30,12 +36,22 @@
 
     <TextView
         android:id="@+id/txtDescripcion"
-        android:text="Descripcion 5 \n ...."
+        android:text=" Durante tres semanas, la compañía verifica y valida la infraestructura informática en cuestión y ofrece la solución o el servicio de seguridad necesario para garantizar la total 'resiliencia' de las instalaciones.
+\n\nFibratel ha comenzado a realizar una auditoría express de seguridad que permite a sus clientes conocer el estado de su infraestructura informática y su resistencia a cualquier ataque. Basado en una herramienta de inteligencia artificial, que verifica la situación real de todos los sistemas, el servicio aplica metodologías de prueba, verificación y validación de las instalaciones ITC, según el marco de trabajo establecido por los organismos internacionales de seguridad. La compañía española presta este servicio y en 3 semanas, identifica los puntos vulnerables de la infraestructura del cliente y propone una solución paliativa permanente.
+\n\nNuestro país es el tercero en el mundo que más ofensivas recibe y, sólo en 2016, el Instituto Nacional de Seguridad (Incibe) detectó 115.000 incidentes contra la seguridad dentro de nuestras fronteras, de los cuales 110.000 afectaron a ciudadanos y al sector privado y 480 a infraestructuras críticas del Estado, como aeropuertos, hospitales, centrales eléctricas o plantas de agua.
+\n\nLas amenazas contra la seguridad son numerosas y cada vez más tóxicas, desde las últimas versiones de ramsonware, a típicos ataques DoS, vía e-mail o web, o cualquier tipo de virus, contra sistemas operativos y puertos de usuario ineficientes. La superficie de ataque es extensa y puede provocar graves perjuicios, en forma de pérdidas económicas o interrupción de servicios básicos, según alertan los especialistas.
+\n\nLos vectores de ataque y los hackers también han evolucionado mucho en los últimos años. Ya no se trata de jóvenes solitarios, graciosos universitarios ni de un juego esporádico. En la actualidad, existen organizaciones cibercriminales que trabajan para desarrollar y automatizar lucrativos y mortíferos ataques.  Además, como sostienen los expertos, existe una gran escasez de profesionales especialistas en ciberseguridad, capaces de frenar a legiones de piratas profesionales que obtienen importantes ingresos por sus fechorías.
+\n\nAnte esto, las empresas españolas han respondido de tres maneras; obviando el problema y apenas situando un firewall perimetral que les aporte una vana sensación de seguridad, instalando un sistema de filtrado (sandboxing) para la detección de amenazas conocidas o nuevas, y en el caso de las empresas más comprometidas, desarrollando un sistema global de “resiliencia” que les permita superar potenciales situaciones traumáticas.
+\n\nFibratel diseña una solución adecuada a cada caso y provee incluso un servicio integral de seguridad gestionada que incluye monitorización continua, sistemas hardware y software para identificar posibles focos de ataque, antes de que se produzcan, para posteriormente proteger el perímetro de la empresa o el Data Center, con un sistema UTM de última generación, que no sólo blinda la red sino que interactúa también con las aplicaciones que circulan por ella, junto a tecnología IPF de detección de identidades o inspección permanente antivirus, protección antimalware en el terminal del usuario, filtrado de e-mail, blindaje de dispositivos y respuesta ante amenazas Cloud o desconocidas, así como tecnología WAM para proteger páginas web.
+\n\nCon tal propósito, Fibratel cuenta con un centro de gestión de seguridad (eSOC) que presta un servicio 24x7 a sus clientes, con personal propio especializado que aprovecha la información más actualizada, sobre vulnerabilidades y las últimas tendencias en ciberataques, para ofrecer una seguridad 360º, a pequeñas y medianas empresas (entre 50 y 1.000 usuarios), que habitualmente no son atendidas por otros proveedores.
+\n\nLa compañía española dirige a este segmento el nuevo “servicio express” de auditoría y monitorización continua, y detecta cualquier vulnerabilidad presente o futura de los sistemas y equipos de red de sus clientes y lo resuelve en función de cada caso.
+\n\nLa novedad se suma a sus habituales servicios de monitorización permanente, operación y gestión de equipos, identificación de riesgos, recomendación y aplicación de políticas de seguridad, actualización y parcheo de sistemas, o emisión de informes.\n\n"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:textSize="14dip"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="290dp"
         android:layout_marginLeft="16dp"
         android:textColor="#ffffff"/>
 
 </RelativeLayout>
+</ScrollView>

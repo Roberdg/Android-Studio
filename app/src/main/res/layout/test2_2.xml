@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pregunta 2 \n ...."
+        android:text="Pregunta 2. \nDerecho al acceso a Internet"
         android:textSize="18dp"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
@@ -24,9 +24,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="69dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 1.." />
+        android:text="La agenda digital europea se fija como objetivo que para 2020 el 100% de la población europea tenga acceso a conexiones de más de 30 megas." />
 
     <RadioButton
         android:id="@+id/test2_p2r2"
@@ -35,9 +35,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="109dp"
+        android:layout_marginTop="89dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 2.." />
+        android:text="La agenda digital europea se fija como objetivo que para 2025 el 100% de la población europea tenga acceso a conexiones de más de 50 megas." />
 
     <RadioButton
         android:id="@+id/test2_p2r3"
@@ -46,9 +46,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="149dp"
+        android:layout_marginTop="159dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 3.." />
+        android:text="La agenda digital europea se fija como objetivo que para 2025 el 100% de la población europea tenga acceso a conexiones de más de 30 megas." />
 
     <RadioButton
         android:id="@+id/test2_p2r4"
@@ -57,9 +57,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="189dp"
+        android:layout_marginTop="229dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 4.." />
+        android:text="La agenda digital europea se fija como objetivo que para 2020 el 100% de la población europea tenga acceso a conexiones de más de 50 megas." />
 
     <Button
         android:id="@+id/test2_siguiente2"

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <group android:checkableBehavior="single">
     <item
@@ -10,11 +11,53 @@
         android:id="@+id/nav_estadisticas"
         android:icon="@drawable/ic_menu_gallery"
         android:title="Insignias" />
-    <item
-        android:id="@+id/tutorias"
-        android:icon="@drawable/ic_notas"
-        android:title="Profesores y tutorias" />
-    </group>
+    <item android:title="UCM ">
+        <menu>
+            <item
+                android:id="@+id/campus"
+                android:icon="@drawable/ic_notas"
+                android:title="Campus Virtual" />
+            <item
+                android:id="@+id/tutorias"
+                android:icon="@drawable/ic_notas"
+                android:title="Profesores y tutorías" />
+            <item
+                android:id="@+id/examenes"
+                android:icon="@drawable/ic_notas"
+                android:title="Exámenes" />
+        </menu>
+    </item>
+
+    <item android:title="Wiki ">
+        <menu>
+            <item
+                android:id="@+id/wiki_temario"
+                android:icon="@drawable/ic_notas"
+                android:title="Temario" />
+            <item
+                android:id="@+id/wiki_trabajo"
+                android:icon="@drawable/ic_notas"
+                android:title="Trabajos" />
+            <item
+                android:id="@+id/wiki_conferencias"
+                android:icon="@drawable/ic_notas"
+                android:title="Conferencias" />
+            <item
+                android:id="@+id/wiki_portal"
+                android:icon="@drawable/ic_notas"
+                android:title="Portal de la comunidad" />
+            <item
+                android:id="@+id/wiki_interes"
+                android:icon="@drawable/ic_notas"
+                android:title="Enlace de interés" />
+            <item
+                android:id="@+id/wiki_ayuda"
+                android:icon="@drawable/ic_notas"
+                android:title="Ayuda" />
+
+        </menu>
+    </item>
+
     <item android:title="Correo ">
         <menu>
             <item
@@ -32,6 +75,7 @@
             android:title="Cerrar sesión"/>
         </menu>
     </item>
+    </group>
     <!--<group android:checkableBehavior="single">
     </group>-->
 </menu>

@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pregunta 3 \n ...."
+        android:text="¿Que es Data Harvesting?"
         android:textSize="18dp"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
@@ -24,9 +24,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="69dp"
+        android:layout_marginTop="9dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 1..." />
+        android:text="La recolección de datos es un proceso en el que se utiliza una gran secuencia de comandos, también conocida como harding, para extraer automáticamente gran cantidad de datos de sitios web y usarlos para otros fines." />
 
     <RadioButton
         android:id="@+id/test2_p3r2"
@@ -35,9 +35,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="109dp"
+        android:layout_marginTop="99dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 2..." />
+        android:text="La recolección de datos es un proceso en el que se utiliza una pequeña secuencia de comandos, también conocida como harding, para extraer automáticamente gran cantidad de datos de sitios web y usarlos para otros fines." />
 
     <RadioButton
         android:id="@+id/test2_p3r3"
@@ -46,9 +46,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="149dp"
+        android:layout_marginTop="189dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 3..." />
+        android:text="La recolección de datos es un proceso en el que se utiliza una gran secuencia de comandos, también conocida como bot malicioso, para extraer automáticamente gran cantidad de datos de sitios web y usarlos para otros fines." />
 
     <RadioButton
         android:id="@+id/test2_p3r4"
@@ -57,9 +57,9 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="189dp"
+        android:layout_marginTop="279dp"
         android:textColor="#ffffff"
-        android:text="Respuesta 4..." />
+        android:text="La recolección de datos es un proceso en el que se utiliza una pequeña secuencia de comandos, también conocida como bot malicioso, para extraer automáticamente gran cantidad de datos de sitios web y usarlos para otros fines." />
 
     <Button
         android:id="@+id/test2_finalizar"
@@ -67,11 +67,12 @@
         android:layout_height="wrap_content"
         android:text="Finalizar"
         android:background="@drawable/rounded_button"
-        android:layout_marginLeft="58dp"
-        android:layout_marginStart="58dp"
-        android:layout_toRightOf="@+id/test2_anterior2"
-        android:layout_toEndOf="@+id/test2_anterior2"
-        android:layout_alignTop="@+id/test2_anterior2" />
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_below="@+id/test2_p3r4"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8"
+        android:layout_marginTop="26dp" />
 
     <Button
         android:id="@+id/test2_anterior2"
@@ -79,12 +80,12 @@
         android:layout_height="wrap_content"
         android:text="Anterior"
         android:background="@drawable/rounded_button"
-        android:layout_marginBottom="76dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/test2_p3r4"
-        android:layout_alignStart="@+id/test2_p3r4"
-        android:layout_marginLeft="70dp"
-        android:layout_marginStart="70dp" />
+        android:layout_alignBaseline="@+id/test2_finalizar"
+        android:layout_alignBottom="@+id/test2_finalizar"
+        android:layout_toLeftOf="@+id/test2_finalizar"
+        android:layout_toStartOf="@+id/test2_finalizar"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp" />
 
 
 </RelativeLayout>
