@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:text="Siguiente"
         android:background="@drawable/rounded_button"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="550dp"
         android:layout_marginLeft="250dp"/>
 
     <Button
@@ -68,8 +68,8 @@
         android:layout_height="wrap_content"
         android:text="Anterior"
         android:background="@drawable/rounded_button"
-        android:layout_marginTop="400dp"
-        android:layout_marginLeft="70dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="50dp"
          />
 
 

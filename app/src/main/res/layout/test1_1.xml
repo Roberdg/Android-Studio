@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:text="Siguiente"
         android:background="@drawable/rounded_button"
-        android:layout_marginTop="430dp"
+        android:layout_marginTop="550dp"
         android:layout_marginLeft="250dp"/>
 
 

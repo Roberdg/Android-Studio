@@ -35,7 +35,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="99dp"
+        android:layout_marginTop="102dp"
         android:textColor="#ffffff"
         android:text="Incrementar la eficacia de la protección de los derechos de propiedad intelectual, mejorar la eficacia de las notificaciones y la defensa en Internet, reforzar las medidas de protección de los derechos de propiedad intelectual." />
 
@@ -46,7 +46,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="189dp"
+        android:layout_marginTop="199dp"
         android:textColor="#ffffff"
         android:text="Incrementar la eficacia de la protección de los derechos de propiedad intelectual, no mejora la eficacia de las notificaciones y la defensa en Internet, no se realiza ninguna medida de protección de los derechos de propiedad intelectual." />
 
@@ -57,7 +57,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="279dp"
+        android:layout_marginTop="309dp"
         android:textColor="#ffffff"
         android:text="Incrementar la eficacia de la protección de los derechos de propiedad intelectual,  no mejora la eficacia de las notificaciones y la defensa en Internet, reforzar las medidas de protección de los derechos de propiedad intelectual." />
 
@@ -65,13 +65,10 @@
         android:id="@+id/test3_siguiente1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="47dp"
-        android:layout_marginRight="47dp"
-        android:layout_marginTop="46dp"
         android:text="Siguiente"
-        android:layout_below="@+id/test3_p1r4"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="250dp" />
 
 
 </RelativeLayout>

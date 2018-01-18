@@ -57,7 +57,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="299dp"
+        android:layout_marginTop="309dp"
         android:textColor="#ffffff"
         android:text="Delitos de daños, con especial referencia al sabotaje informático, delitos contra el material con copyright, delitos relativos al mercado y a los consumidores." />
 
@@ -67,8 +67,8 @@
         android:layout_height="wrap_content"
         android:text="Siguiente"
         android:background="@drawable/rounded_button"
-        android:layout_marginLeft="236dp"
-        android:layout_marginTop="440dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="250dp"
         />
 
     <Button
@@ -77,8 +77,8 @@
         android:layout_height="wrap_content"
         android:text="Anterior"
         android:background="@drawable/rounded_button"
-        android:layout_marginLeft="89dp"
-        android:layout_marginTop="440dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="50dp"
          />
 
 
