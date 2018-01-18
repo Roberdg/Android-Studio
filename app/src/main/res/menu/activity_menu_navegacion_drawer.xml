@@ -28,7 +28,7 @@
         </menu>
     </item>
 
-    <item android:title="Wiki ">
+    <item android:title="WIKI ">
         <menu>
             <item
                 android:id="@+id/wiki_temario"

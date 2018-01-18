@@ -17,6 +17,10 @@
         android:textColor="#ffffff"
         android:id="@+id/textView8" />
 
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <RadioButton
         android:id="@+id/test3_p1r1"
         android:layout_width="wrap_content"
@@ -24,7 +28,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="109dp"
         android:textColor="#ffffff"
         android:text="Decrementar la eficacia de la protección de los derechos de propiedad intelectual, mejorar la eficacia de las notificaciones y la defensa en Internet, reforzar las medidas de protección de los derechos de propiedad intelectual." />
 
@@ -35,7 +39,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="102dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="Incrementar la eficacia de la protección de los derechos de propiedad intelectual, mejorar la eficacia de las notificaciones y la defensa en Internet, reforzar las medidas de protección de los derechos de propiedad intelectual." />
 
@@ -46,7 +50,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="199dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="Incrementar la eficacia de la protección de los derechos de propiedad intelectual, no mejora la eficacia de las notificaciones y la defensa en Internet, no se realiza ninguna medida de protección de los derechos de propiedad intelectual." />
 
@@ -57,9 +61,11 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="309dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="Incrementar la eficacia de la protección de los derechos de propiedad intelectual,  no mejora la eficacia de las notificaciones y la defensa en Internet, reforzar las medidas de protección de los derechos de propiedad intelectual." />
+
+    </RadioGroup>
 
     <Button
         android:id="@+id/test3_siguiente1"

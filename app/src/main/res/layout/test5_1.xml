@@ -17,6 +17,10 @@
         android:textColor="#ffffff"
         android:id="@+id/textView8" />
 
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <RadioButton
         android:id="@+id/test5_p1r1"
         android:layout_width="wrap_content"
@@ -24,7 +28,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="69dp"
         android:textColor="#ffffff"
         android:text="Los delitos se clasifican en graves, menos graves y leves. Son delitos graves aquellos a los que la Ley castiga con pena de prisión superior a 5 años. Los delitos menos graves son los sancionados con pena de prisión de 3 meses a 5 años. Faltas son infracciones castigadas con penas leves." />
 
@@ -35,7 +39,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="129dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="Los delitos se clasifican en graves, menos graves y leves. Son delitos graves aquellos a los que la Ley castiga con pena de prisión superior a 5 años. Los delitos menos graves son los sancionados con pena de prisión de 6 meses a 10 años. Faltas son infracciones castigadas con penas leves." />
 
@@ -46,7 +50,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="253dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="Los delitos se clasifican en leves, menos graves, graves. Son delitos graves aquellos a los que la Ley castiga con pena de prisión superior a 10 años. Los delitos menos graves son los sancionados con pena de prisión de 5 meses a 10 años. " />
 
@@ -57,9 +61,11 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="359dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="Los delitos se clasifican en leves, menos leves. Son delitos graves aquellos a los que la Ley castiga con pena de prisión superior a 5 años. Los delitos menos graves son los sancionados con pena de prisión de 6 meses a 10 años. " />
+
+    </RadioGroup>
 
     <Button
         android:id="@+id/test5_siguiente1"

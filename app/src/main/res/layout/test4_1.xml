@@ -17,6 +17,10 @@
         android:textColor="#ffffff"
         android:id="@+id/textView8" />
 
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <RadioButton
         android:id="@+id/test4_p1r1"
         android:layout_width="wrap_content"
@@ -24,7 +28,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="49dp"
+        android:layout_marginTop="129dp"
         android:textColor="#ffffff"
         android:text="15 días." />
 
@@ -35,7 +39,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="89dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="20 días." />
 
@@ -46,7 +50,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="129dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="1 mes." />
 
@@ -57,9 +61,11 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="169dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="2 meses." />
+
+    </RadioGroup>
 
     <Button
         android:id="@+id/test4_siguiente1"

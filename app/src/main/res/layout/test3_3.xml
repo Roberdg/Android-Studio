@@ -17,6 +17,10 @@
         android:textColor="#ffffff"
         android:id="@+id/textView8" />
 
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <RadioButton
         android:id="@+id/test3_p3r1"
         android:layout_width="wrap_content"
@@ -24,7 +28,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="129dp"
         android:textColor="#ffffff"
         android:text="50 años." />
 
@@ -35,7 +39,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="59dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="60 años." />
 
@@ -46,7 +50,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="99dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="70 años." />
 
@@ -57,9 +61,11 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="139dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="100 años." />
+
+    </RadioGroup>
 
     <Button
         android:id="@+id/test3_finalizar"

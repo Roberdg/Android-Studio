@@ -17,6 +17,9 @@
         android:textColor="#ffffff"
         android:id="@+id/textView8" />
 
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <RadioButton
         android:id="@+id/test2_p2r1"
         android:layout_width="wrap_content"
@@ -24,7 +27,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="109dp"
         android:textColor="#ffffff"
         android:text="La agenda digital europea se fija como objetivo que para 2020 el 100% de la población europea tenga acceso a conexiones de más de 30 megas." />
 
@@ -35,7 +38,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="89dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="La agenda digital europea se fija como objetivo que para 2025 el 100% de la población europea tenga acceso a conexiones de más de 50 megas." />
 
@@ -46,7 +49,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="159dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="La agenda digital europea se fija como objetivo que para 2025 el 100% de la población europea tenga acceso a conexiones de más de 30 megas." />
 
@@ -57,10 +60,11 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="229dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="La agenda digital europea se fija como objetivo que para 2020 el 100% de la población europea tenga acceso a conexiones de más de 50 megas." />
 
+    </RadioGroup>
     <Button
         android:id="@+id/test2_siguiente2"
         android:layout_width="wrap_content"
