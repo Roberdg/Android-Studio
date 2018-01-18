@@ -17,6 +17,10 @@
         android:textColor="#ffffff"
         android:id="@+id/textView8" />
 
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <RadioButton
         android:id="@+id/test3_p2r1"
         android:layout_width="wrap_content"
@@ -24,7 +28,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="129dp"
         android:textColor="#ffffff"
         android:text="Pueden cederse, obtención de beneficios, reproducción, distribución, comunicación pública y transformación." />
 
@@ -35,7 +39,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="89dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="No se pueden ceder, obtención de beneficios, reproducción, distribución, comunicación pública y transformación." />
 
@@ -46,7 +50,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="149dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="Pueden cederse, no se obtienen beneficios, reproducción, distribución, comunicación pública y transformación." />
 
@@ -57,9 +61,11 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="219dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="Pueden cederse, obtención de beneficios, reproducción,  no distribución, comunicación pública y transformación." />
+
+    </RadioGroup>
 
     <Button
         android:id="@+id/test3_siguiente2"

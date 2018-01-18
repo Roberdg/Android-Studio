@@ -10,13 +10,16 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¿Que es Data Harvesting?"
+        android:text="Pregunta 3. \n¿Que es Data Harvesting?"
         android:textSize="18dp"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:textColor="#ffffff"
         android:id="@+id/textView8" />
 
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <RadioButton
         android:id="@+id/test2_p3r1"
         android:layout_width="wrap_content"
@@ -24,7 +27,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="79dp"
         android:textColor="#ffffff"
         android:text="La recolección de datos es un proceso en el que se utiliza una gran secuencia de comandos, también conocida como harding, para extraer automáticamente gran cantidad de datos de sitios web y usarlos para otros fines." />
 
@@ -35,7 +38,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="99dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="La recolección de datos es un proceso en el que se utiliza una pequeña secuencia de comandos, también conocida como harding, para extraer automáticamente gran cantidad de datos de sitios web y usarlos para otros fines." />
 
@@ -46,7 +49,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="189dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="La recolección de datos es un proceso en el que se utiliza una gran secuencia de comandos, también conocida como bot malicioso, para extraer automáticamente gran cantidad de datos de sitios web y usarlos para otros fines." />
 
@@ -57,9 +60,11 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="279dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="La recolección de datos es un proceso en el que se utiliza una pequeña secuencia de comandos, también conocida como bot malicioso, para extraer automáticamente gran cantidad de datos de sitios web y usarlos para otros fines." />
+
+    </RadioGroup>
 
     <Button
         android:id="@+id/test2_finalizar"

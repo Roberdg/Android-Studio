@@ -17,6 +17,9 @@
         android:textColor="#ffffff"
         android:id="@+id/textView8" />
 
+<RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <RadioButton
         android:id="@+id/test2_p1r1"
         android:layout_width="wrap_content"
@@ -24,7 +27,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="120dp"
         android:textColor="#ffffff"
         android:text="Acceso libre a internet, libertad de expresión y asociación, acceso al conocimiento, intercambio de aprendizaje y creación - SW libre, conciencia, protección y realización de los Derechos." />
 
@@ -35,7 +38,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="89dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="Libertad de expresión y asociación, acceso al conocimiento, intercambio de aprendizaje y creación SW libre, privacidad, vigilancia y encriptación, gobernanza de Internet, conciencia, protección y realización de los Derechos." />
 
@@ -46,7 +49,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="179dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="Acceso libre a internet, libertad de expresión y asociación, acceso al conocimiento, intercambio de aprendizaje y creación - SW libre, privacidad, vigilancia y encriptación, gobernanza de Internet, conciencia, protección y realización de los Derechos." />
 
@@ -57,9 +60,11 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="279dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="Acceso libre a internet, libertad de expresión y asociación, acceso al conocimiento, privacidad, vigilancia y encriptación, gobernanza de Internet, conciencia, protección y realización de los Derechos." />
+
+</RadioGroup>
 
     <Button
         android:id="@+id/test2_siguiente1"

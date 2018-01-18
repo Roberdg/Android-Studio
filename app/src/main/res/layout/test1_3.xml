@@ -17,6 +17,10 @@
         android:textColor="#ffffff"
         android:id="@+id/textView8" />
 
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <RadioButton
         android:id="@+id/test1_p3r1"
         android:layout_width="wrap_content"
@@ -24,7 +28,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="119dp"
         android:textColor="#ffffff"
         android:text="Identificar el vacío ético/moral/legal generado por el uso de la tecnología, eliminar los enredos conceptuales, utilizar los valores básicos y los recursos éticos para revisar las políticas/protocolos/códigos existentes." />
 
@@ -35,7 +39,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="119dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="Identificar el vacío ético/moral/legal generado por el uso de la tecnología, eliminar los enredos conceptuales, utilizar los valores básicos y los recursos éticos para revisar las códigos existentes." />
 
@@ -46,7 +50,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="209dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="Identificar el vacío ético/moral/legal generado por el uso de la tecnología, eliminar los enredos conceptuales, utilizar los valores básicos y los recursos éticos para revisar las políticas existentes." />
 
@@ -57,9 +61,11 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="299dp"
+        android:layout_marginTop="19dp"
         android:textColor="#ffffff"
         android:text="Identificar el vacío ético/moral/legal generado por el uso de la tecnología, utilizar los recursos éticos para revisar las políticas/protocolos/códigos existentes." />
+
+    </RadioGroup>
 
     <Button
         android:id="@+id/test1_finalizar"
