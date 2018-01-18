@@ -65,13 +65,10 @@
         android:id="@+id/test5_siguiente1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
-        android:layout_marginTop="1dp"
+        android:background="@drawable/rounded_button"
         android:text="Siguiente"
-        android:layout_below="@+id/test5_p1r4"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="250dp" />
 
 
 </RelativeLayout>

@@ -54,8 +54,6 @@ public class MenuActivity extends AppCompatActivity  {
                 this, drawerL, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
 
         drawerL.setDrawerListener(toggle);
-
-
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -65,97 +63,91 @@ public class MenuActivity extends AppCompatActivity  {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
 
+                    drawerL.closeDrawers();
+                    //TextView c = (TextView) findViewById(R.id.text_nav_email);
+                    //SharedPreferences prefs = getSharedPreferences("MisPreferencias", Context.MODE_PRIVATE);
+                   // c.setText(prefs.getString("email", ""));
+                    switch (menuItem.getItemId()) {
 
+                        case R.id.nav_perfil:
+                            Toast.makeText(MenuActivity.this, "Perfil del usuario", Toast.LENGTH_SHORT).show();
+                            intent = new Intent(MenuActivity.this, Perfil.class);
+                            startActivity(intent);
 
-                if (menuItem.isChecked()) menuItem.setChecked(false);
-                else menuItem.setChecked(true);
-                drawerL.closeDrawers();
+                            break;
+                        case R.id.nav_estadisticas:
+                            Toast.makeText(MenuActivity.this, "Estadísticas del usuario", Toast.LENGTH_SHORT).show();
+                            intent = new Intent(MenuActivity.this, Estadisticas.class);
+                            startActivity(intent);
 
-                TextView c = (TextView)findViewById(R.id.text_nav_email);
-                SharedPreferences prefs = getSharedPreferences("MisPreferencias", Context.MODE_PRIVATE);
-                c.setText(prefs.getString("email",""));
+                            break;
+                        case R.id.campus:
+                            Toast.makeText(MenuActivity.this, "Campus Virtual", Toast.LENGTH_SHORT).show();
+                            uri = Uri.parse("http://www.ucm.es/campusvirtual");
+                            intent = new Intent(Intent.ACTION_VIEW,uri);
+                            startActivity(intent);
+                            break;
+                        case R.id.tutorias:
+                            Toast.makeText(MenuActivity.this, "Profesores y tutorias", Toast.LENGTH_SHORT).show();
+                            uri = Uri.parse("http://informatica.ucm.es/profesores-y-tutorias");
+                            intent = new Intent(Intent.ACTION_VIEW,uri);
+                            startActivity(intent);
+                            break;
+                        case R.id.examenes:
+                            Toast.makeText(MenuActivity.this, "Exámenes", Toast.LENGTH_SHORT).show();
+                            uri = Uri.parse("http://informatica.ucm.es/examenes-por-curso-y-grupo");
+                            intent = new Intent(Intent.ACTION_VIEW,uri);
+                            startActivity(intent);
+                            break;
+                        case R.id.nav_correo:
+                            Toast.makeText(MenuActivity.this, "Correo electrónico del usuario", Toast.LENGTH_SHORT).show();
+                            uri = Uri.parse("http://gmail.com");
+                            intent = new Intent(Intent.ACTION_VIEW,uri);
+                            startActivity(intent);
+                            break;
+                        case R.id.nav_cerrarsesion:
+                            Toast.makeText(MenuActivity.this, "Ha cerrado la sesión", Toast.LENGTH_SHORT).show();
+                            intent = new Intent(MenuActivity.this, LoginActivity.class);
+                            startActivity(intent);
+                            break;
+                        case R.id.wiki_temario:
+                            uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/Página_principal#Temario_ELP");
+                            intent = new Intent(Intent.ACTION_VIEW,uri);
+                            startActivity(intent);
+                            break;
+                        case R.id.wiki_trabajo:
+                            uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/Trabajos_ELP");
+                            intent = new Intent(Intent.ACTION_VIEW,uri);
+                            startActivity(intent);
+                            break;
+                        case R.id.wiki_conferencias:
+                            uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/Conferencias");
+                            intent = new Intent(Intent.ACTION_VIEW,uri);
+                            startActivity(intent);
+                            break;
+                        case R.id.wiki_portal:
+                            uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/FdIwiki_ELP:Portal_de_la_comunidad");
+                            intent = new Intent(Intent.ACTION_VIEW,uri);
+                            startActivity(intent);
+                            break;
+                        case R.id.wiki_interes:
+                            uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/FdIwiki_ELP:EnlacesInteres");
+                            intent = new Intent(Intent.ACTION_VIEW,uri);
+                            startActivity(intent);
+                            break;
+                        case R.id.wiki_ayuda:
+                            uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/Ayuda:Tutorial");
+                            intent = new Intent(Intent.ACTION_VIEW,uri);
+                            startActivity(intent);
+                            break;
+                    }
 
-                switch (menuItem.getItemId())
-                {
-                /*Se define la lógica de casos que puedan producirse al seleccionar cualquier elemento del menú.*/
-                    case R.id.nav_perfil:
-                        Toast.makeText(MenuActivity.this,"Perfil del usuario", Toast.LENGTH_SHORT).show();
-                        intent = new Intent(MenuActivity.this, Perfil.class);
-                        startActivity(intent);
-
-                        break;
-                    case R.id.nav_estadisticas:
-                        Toast.makeText(MenuActivity.this,"Estadísticas del usuario", Toast.LENGTH_SHORT).show();
-                        intent = new Intent(MenuActivity.this, Estadisticas.class);
-                        startActivity(intent);
-
-                        break;
-                    case R.id.campus:
-                        Toast.makeText(MenuActivity.this,"Campus Virtual", Toast.LENGTH_SHORT).show();
-                        uri = Uri.parse("http://www.ucm.es/campusvirtual");
-                        intent = new Intent(Intent.ACTION_VIEW,uri);
-                        startActivity(intent);
-                        break;
-                    case R.id.tutorias:
-                        Toast.makeText(MenuActivity.this,"Profesores y tutorias", Toast.LENGTH_SHORT).show();
-                        uri = Uri.parse("http://informatica.ucm.es/profesores-y-tutorias");
-                        intent = new Intent(Intent.ACTION_VIEW,uri);
-                        startActivity(intent);
-                        break;
-                    case R.id.examenes:
-                        Toast.makeText(MenuActivity.this,"Exámenes", Toast.LENGTH_SHORT).show();
-                        uri = Uri.parse("http://informatica.ucm.es/examenes-por-curso-y-grupo");
-                        intent = new Intent(Intent.ACTION_VIEW,uri);
-                        startActivity(intent);
-                        break;
-                    case R.id.nav_correo:
-                        Toast.makeText(MenuActivity.this,"Correo electrónico del usuario", Toast.LENGTH_SHORT).show();
-                        uri = Uri.parse("http://gmail.com");
-                        intent = new Intent(Intent.ACTION_VIEW,uri);
-                        startActivity(intent);
-                        break;
-                    case R.id.nav_cerrarsesion:
-                        Toast.makeText(MenuActivity.this,"Ha cerrado la sesión", Toast.LENGTH_SHORT).show();
-                        intent = new Intent(MenuActivity.this, LoginActivity.class);
-                        startActivity(intent);
-                        break;
-                    case R.id.wiki_temario:
-                        uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/Página_principal#Temario_ELP");
-                        intent = new Intent(Intent.ACTION_VIEW,uri);
-                        startActivity(intent);
-                        break;
-                    case R.id.wiki_trabajo:
-                        uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/Trabajos_ELP");
-                        intent = new Intent(Intent.ACTION_VIEW,uri);
-                        startActivity(intent);
-                        break;
-                    case R.id.wiki_conferencias:
-                        uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/Conferencias");
-                        intent = new Intent(Intent.ACTION_VIEW,uri);
-                        startActivity(intent);
-                        break;
-                    case R.id.wiki_portal:
-                        uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/FdIwiki_ELP:Portal_de_la_comunidad");
-                        intent = new Intent(Intent.ACTION_VIEW,uri);
-                        startActivity(intent);
-                        break;
-                    case R.id.wiki_interes:
-                        uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/FdIwiki_ELP:EnlacesInteres");
-                        intent = new Intent(Intent.ACTION_VIEW,uri);
-                        startActivity(intent);
-                        break;
-                    case R.id.wiki_ayuda:
-                        uri = Uri.parse("http://wikis.fdi.ucm.es/ELP/Ayuda:Tutorial");
-                        intent = new Intent(Intent.ACTION_VIEW,uri);
-                        startActivity(intent);
-                        break;
-                    default:
-                        break;
-                }
-                return true;
+                    return true;
             }
         });
-        // Create the adapter that will return a fragment for each of the three
+
+
+            // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
         // Set up the ViewPager with the sections adapter.

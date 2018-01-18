@@ -57,7 +57,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="269dp"
+        android:layout_marginTop="279dp"
         android:textColor="#ffffff"
         android:text="Acceso libre a internet, libertad de expresión y asociación, acceso al conocimiento, privacidad, vigilancia y encriptación, gobernanza de Internet, conciencia, protección y realización de los Derechos." />
 
@@ -65,12 +65,11 @@
         android:id="@+id/test2_siguiente1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
-        android:layout_marginTop="27dp"
         android:text="Siguiente"
-        android:layout_below="@+id/test2_p1r4"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="250dp"
+
+        />
 
 </RelativeLayout>

@@ -67,12 +67,8 @@
         android:layout_height="wrap_content"
         android:text="Siguiente"
         android:background="@drawable/rounded_button"
-        android:layout_alignBaseline="@+id/test3_anterior1"
-        android:layout_alignBottom="@+id/test3_anterior1"
-        android:layout_toRightOf="@+id/test3_anterior1"
-        android:layout_toEndOf="@+id/test3_anterior1"
-        android:layout_marginLeft="60dp"
-        android:layout_marginStart="60dp" />
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="250dp" />
 
     <Button
         android:id="@+id/test3_anterior1"
@@ -80,12 +76,8 @@
         android:layout_height="wrap_content"
         android:text="Anterior"
         android:background="@drawable/rounded_button"
-        android:layout_marginBottom="76dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/test3_p2r4"
-        android:layout_alignStart="@+id/test3_p2r4"
-        android:layout_marginLeft="54dp"
-        android:layout_marginStart="54dp" />
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="50dp" />
 
 
 </RelativeLayout>

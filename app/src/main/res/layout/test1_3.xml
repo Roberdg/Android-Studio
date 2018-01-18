@@ -46,7 +46,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="199dp"
+        android:layout_marginTop="209dp"
         android:textColor="#ffffff"
         android:text="Identificar el vacío ético/moral/legal generado por el uso de la tecnología, eliminar los enredos conceptuales, utilizar los valores básicos y los recursos éticos para revisar las políticas existentes." />
 
@@ -57,7 +57,7 @@
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="279dp"
+        android:layout_marginTop="299dp"
         android:textColor="#ffffff"
         android:text="Identificar el vacío ético/moral/legal generado por el uso de la tecnología, utilizar los recursos éticos para revisar las políticas/protocolos/códigos existentes." />
 
@@ -65,14 +65,10 @@
         android:id="@+id/test1_finalizar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="57dp"
-        android:layout_marginRight="57dp"
         android:text="Finalizar"
         android:background="@drawable/rounded_button"
-        android:layout_below="@+id/test1_p3r4"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="37dp" />
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="250dp"/>
 
     <Button
         android:id="@+id/test1_anterior2"
@@ -80,12 +76,9 @@
         android:layout_height="wrap_content"
         android:text="Anterior"
         android:background="@drawable/rounded_button"
-        android:layout_marginRight="58dp"
-        android:layout_marginEnd="58dp"
-        android:layout_alignBaseline="@+id/test1_finalizar"
-        android:layout_alignBottom="@+id/test1_finalizar"
-        android:layout_toLeftOf="@+id/test1_finalizar"
-        android:layout_toStartOf="@+id/test1_finalizar" />
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="50dp"
+         />
 
 
 

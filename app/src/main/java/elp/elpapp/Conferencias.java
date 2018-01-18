@@ -81,7 +81,7 @@ public class Conferencias extends Fragment {
         ItemsConferencias.add(new DatosConferencias("Redecentralizing the Web: IPFS and Filecoin",R.drawable.img_confe33));
         ItemsConferencias.add(new DatosConferencias("Diálogo con ex-estudiantes",R.drawable.img_confe44));
         ItemsConferencias.add(new DatosConferencias("Brecha de género en las TICs",R.drawable.img_confe55));
-
+        ItemsConferencias.add(new DatosConferencias(" ",0));
         AdaptadorConferencias = new AdaptadorConferencias(getActivity(), ItemsConferencias);
         listaItemsConferencias.setAdapter(AdaptadorConferencias);
     }
